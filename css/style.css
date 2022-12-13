@@ -22,6 +22,7 @@ li {
 
 img {
   vertical-align: top;
+  display: block;
 }
 
 span {
@@ -55,4 +56,23 @@ input {
 button {
   cursor: pointer;
   background-color: inherit;
+}
+
+.container {
+  max-width: 1245px;
+  margin: 0 auto;
+  border: 2px solid green;
+}
+
+.hero {
+  background: silver;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 50, 99, 0.67)), to(rgba(48, 50, 99, 0.67))), url(../img/hero-bg.png);
+  background-image: linear-gradient(90deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%), url(../img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.hero-content {
+  height: 810px;
 }/*# sourceMappingURL=style.css.map */
