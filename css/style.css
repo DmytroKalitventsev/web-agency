@@ -63,10 +63,11 @@ button {
 .container {
   max-width: 1245px;
   margin: 0 auto;
-  border: 2px solid green;
 }
 
 .title {
+  font-weight: bold;
+  font-size: 48px;
   color: white;
   text-align: center;
 }
@@ -198,4 +199,59 @@ button {
 }
 .achivment__descr {
   font-size: 0.75rem;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 2px solid #adadad;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 26px;
+  line-height: 30px;
+}
+.menu__item {
+  padding: 35px 18px;
+}
+.menu__item-link {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.menu__item-link:hover {
+  color: #f6ae48;
+}
+.menu__item:first-child {
+  color: #f6ae48;
+}
+.menu__item:last-child {
+  padding-right: 0;
 }/*# sourceMappingURL=style.css.map */

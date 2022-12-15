@@ -62,10 +62,11 @@ button {
 .container {
 	max-width: 1245px;
 	margin: 0 auto;
-	border: 2px solid green;
 }
 
 .title {
+	font-weight: bold;
+	font-size: 48px;
 	color: white;
 	text-align: center;
 	&_h1 {

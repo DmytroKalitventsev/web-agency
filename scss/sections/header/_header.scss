@@ -1,0 +1,27 @@
+.header {
+	background: #fff;
+	border-bottom: 2px solid #adadad;
+}
+.header-content {
+	@include flex(flex-end);
+}
+.menu {
+	@include flex;
+	font-size: 26px;
+	line-height: 30px;
+	&__item {
+		padding: 35px 18px;
+		&-link {
+			transition: color .2s;
+			&:hover {
+				color: #f6ae48;
+			}
+		}
+		&:first-child {
+			color: #f6ae48;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
