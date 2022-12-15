@@ -1,0 +1,30 @@
+.hero {
+	background: silver;
+	background-image: 
+		linear-gradient(85deg, rgba(48,50,99,0.67) 0%, rgba(48,50,99,0.67) 100%),
+		url(../img/hero-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+.hero-block {
+	@include flex;
+	height: 810px;
+	padding: 70px 75px 0;
+}
+
+.hero-content {
+	@include flex(center, center, column);
+	&__title {
+		margin-bottom: 25px;
+	}
+	&__descr {
+		text-align: center;
+		margin-bottom: 55px;
+		color: white;
+		line-height: 36px;
+		max-width: 835px;
+	}
+}
+
+@import "./achivments";

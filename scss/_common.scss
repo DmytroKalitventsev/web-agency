@@ -1,3 +1,9 @@
+:root {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 2px;
+}
+
 *,
 *::before,
 *::after {
@@ -6,23 +12,24 @@
 	border: 0;
 	box-sizing: border-box;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
 	display: block;
 }
+
 ul,
 ol,
 li {
 	list-style: none;
 }
+
+span,
 img {
-	vertical-align: top;
 	display: block;
 }
-span {
-	display: block;
-}
+
 h1,
 h2,
 h3,
@@ -32,11 +39,13 @@ h6 {
 	font-weight: inherit;
 	font-size: inherit;
 }
+
 html,
 body {
 	height: 100%;
 	line-height: 1;
 }
+
 button,
 input {
 	font-size: inherit;
@@ -44,12 +53,22 @@ input {
 	color: inherit;
 	font-family: inherit;
 }
+
 button {
 	cursor: pointer;
 	background-color: inherit;
 }
+
 .container {
 	max-width: 1245px;
 	margin: 0 auto;
 	border: 2px solid green;
+}
+
+.title {
+	color: white;
+	text-align: center;
+	&_h1 {
+		line-height: 72px;
+	}
 }
