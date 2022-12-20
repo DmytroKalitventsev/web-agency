@@ -4,7 +4,6 @@
 }
 .header-content {
 	@include flex(space-between);
-	position: sticky;
 }
 .logo {
 	@include flex;

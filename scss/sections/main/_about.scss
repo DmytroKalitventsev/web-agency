@@ -1,0 +1,71 @@
+.about {
+	background-color: #fff;
+	letter-spacing: 1px;
+}
+.about-content {
+	@include flex(center, center, column);
+	padding: 20px 0 250px 0;
+	position: relative;
+}
+.background-text {
+	&__title {
+		font-size: 15em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: rgba(193,193,193,0.2);
+		position: absolute;
+		top: 80px;
+		left: 300px;
+	}
+}
+.about-main {
+	@include flex;
+	width: 100%;
+	&__title {
+		color: #000;
+	}
+	&__descr {
+		padding: 150px 80px 150px 220px;
+		font-size: .85rem;
+		line-height: 30px;
+	}
+}
+.about-block {
+	@include flex;
+}
+.about-additional {
+	@include flex(center, flex-start, column);
+	padding: 25px;
+	&_orange {
+		background-color: #f6ae48;
+		color: #fff;
+	}
+	&__icon {
+		&-img {}
+	}
+	&__title {
+		font-size: .85rem;
+		line-height: 26px;
+		font-weight: bold;
+	}
+	&__descr {
+		line-height: 26px;
+		font-size: .60rem;
+	}
+	&__price-block {
+		@include flex(space-between);
+		width: 100%;
+	}
+	&__price {
+		border: 2px solid #fff;
+		padding: 5px;
+	}
+	&__view {
+		&-img {}
+	}
+	&:first-child {
+		padding-left: 0;
+	}
+}
+
+@import "./about-media"

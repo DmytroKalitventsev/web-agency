@@ -67,10 +67,13 @@ button {
 .title {
 	font-weight: bold;
 	font-size: 2rem;
-	color: white;
 	text-align: center;
 	&_h1 {
+		color: white;
 		line-height: 72px;
+	}
+	&_h2 {
+		line-height: 54px;
 	}
 }
 
