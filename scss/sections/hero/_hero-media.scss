@@ -1,0 +1,37 @@
+@media (max-width: $bp1) {
+	.hero-block {
+		padding: 0;
+	}
+}
+
+@media (max-width: $bp3) {
+	.hero-block {
+		padding: 50px 0;
+		height: initial;
+	}
+}
+
+@media (max-width: $bp4) {
+	.title_h1 {
+		line-height: 58px;
+	}
+}
+
+@media (max-width: $bp5) {
+	.hero-block {
+		padding: 15px 0;
+	}
+	.hero-content__title {
+		margin-bottom: 15px;
+	}
+	.title {
+		font-size: 1.7rem;
+		&_h1 {
+			line-height: 35px;
+		}
+	}
+	.hero-content__descr {
+		line-height: 20px;
+		margin-bottom: 15px;
+	}
+}

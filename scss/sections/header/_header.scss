@@ -3,7 +3,21 @@
 	border-bottom: 2px solid #adadad;
 }
 .header-content {
-	@include flex(flex-end);
+	@include flex(space-between);
+	position: sticky;
+}
+.logo {
+	@include flex;
+	height: 70px;
+	width: 70px;
+	&__img {
+		height: 60px;
+	}
+}
+.menu-block {
+	&__button {
+		display: none;
+	}
 }
 .menu {
 	@include flex;
@@ -12,6 +26,7 @@
 	&__item {
 		padding: 35px 18px;
 		&-link {
+			white-space: nowrap;
 			transition: color .2s;
 			&:hover {
 				color: #f6ae48;
@@ -25,3 +40,5 @@
 		}
 	}
 }
+
+@import "./header-media"

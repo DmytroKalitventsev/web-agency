@@ -1,0 +1,21 @@
+@media (max-width: $bp1) {
+	:root {
+		font-size: 20px;
+	}
+
+	.container {
+		padding: 0 15px;
+	}
+}
+
+@media (max-width: $bp3) {
+	:root {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: $bp5) {
+	:root {
+		letter-spacing: 1;
+	}
+}

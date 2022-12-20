@@ -66,10 +66,12 @@ button {
 
 .title {
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 2rem;
 	color: white;
 	text-align: center;
 	&_h1 {
 		line-height: 72px;
 	}
 }
+
+@import "./media";

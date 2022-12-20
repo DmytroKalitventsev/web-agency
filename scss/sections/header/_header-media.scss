@@ -1,0 +1,37 @@
+@media (max-width: $bp2) {
+	.header-content {
+		@include flex(flex-start);
+	}
+	.logo {
+		margin-left: 30px;
+	}
+	.menu-block {
+		@include flex;
+		order: -1;
+		&__button {
+			@include flex(center, center, column);
+			width: 50px;
+			height: 50px;
+			position: relative;
+			&::before {
+				transform: translateY(-8px);
+			}
+			&::after {
+				transform: translateY(8px);
+			}
+			&-item,
+			&::after,
+			&::before {
+				content: "";
+				width: 60%;
+				height: 3px;
+				border-radius: 10px;
+				background: #000;
+				position: absolute;
+			}
+		}
+	}
+	.menu {
+		display: none;
+	}
+}
