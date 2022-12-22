@@ -4,65 +4,76 @@
 }
 .about-content {
 	@include flex(center, center, column);
-	padding: 20px 0 250px 0;
-	position: relative;
-}
-.background-text {
-	&__title {
-		font-size: 15em;
-		font-weight: bold;
-		text-transform: uppercase;
-		color: rgba(193,193,193,0.2);
-		position: absolute;
-		top: 80px;
-		left: 300px;
-	}
+	padding: 165px 0 250px 0;
 }
 .about-main {
-	@include flex;
+	@include flex(space-between);
 	width: 100%;
+	margin-bottom: 205px;
+	position: relative;
 	&__title {
 		color: #000;
+		margin-right: 20px;
 	}
 	&__descr {
-		padding: 150px 80px 150px 220px;
+		max-width: 760px;
+		margin-right: 70px;
 		font-size: .85rem;
-		line-height: 30px;
+		line-height: 28px;
+	}
+	&__bg-text {
+		font-size: 16rem;
+		letter-spacing: 17px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)
 	}
 }
 .about-block {
-	@include flex;
+	@include flex(center, flex-start);
 }
 .about-additional {
 	@include flex(center, flex-start, column);
-	padding: 25px;
+	padding: 15px 25px;
 	&_orange {
 		background-color: #f6ae48;
 		color: #fff;
 	}
-	// &__icon {
-	// 	&-img {}
-	// }
+	&__icon {
+		&_mg {
+			margin-bottom: 13px;
+		}
+	}
 	&__title {
 		font-size: .85rem;
-		line-height: 26px;
+		line-height: 40px;
 		font-weight: bold;
 	}
 	&__descr {
-		line-height: 26px;
+		line-height: 24px;
 		font-size: .60rem;
 	}
 	&__price-block {
 		@include flex(space-between);
 		width: 100%;
+		margin-top: 15px;
 	}
 	&__price {
+		@include flex;
 		border: 2px solid #fff;
-		padding: 5px;
+		height: 35px;
+		width: 130px;
+		font-size: .75rem;
 	}
-	// &__view {
-	// 	&-img {}
-	// }
+	&__view {
+		@include flex;
+		height: 40px;
+		width: 40px;
+		&-img {
+			width: 22px;
+		}
+	}
 	&:first-child {
 		padding-left: 0;
 	}
