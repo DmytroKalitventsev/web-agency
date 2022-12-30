@@ -2,7 +2,6 @@
 	:root {
 		font-size: 20px;
 	}
-
 	.container {
 		padding: 0 15px;
 	}
@@ -11,11 +10,35 @@
 @media (max-width: $bp3) {
 	:root {
 		font-size: 16px;
+		letter-spacing: 1;
+	}
+	.animate {
+		animation: none;
+	}
+}
+
+@media (max-width: $bp4) {
+	.title {
+		&_h1 {
+			line-height: 58px;
+		}
+		&_h2 {
+			line-height: 48px;
+		}
 	}
 }
 
 @media (max-width: $bp5) {
-	:root {
-		letter-spacing: 1;
+	.title {
+		font-size: 1.7rem;
+		&_h1 {
+			line-height: 35px;
+		}
+		&_h2 {
+			line-height: 35px;
+		}
+	}
+	.price-block__button-price {
+		min-width: 100px;
 	}
 }

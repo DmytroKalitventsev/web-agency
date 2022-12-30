@@ -1,32 +1,36 @@
 @media (max-width: $bp1) {
-	.hero-content {
+	.credo-content {
+		justify-content: center;
 		padding: 0;
 	}
 }
 
 @media (max-width: $bp3) {
-	.hero-content {
-		padding: 50px 0;
+	.credo-content {
+		padding: 60px 0;
 		height: initial;
 		&__title {
 			margin-bottom: 20px;
 		}
 		&__descr {
-			margin-bottom: 40px;
+			max-height: 240px;
 		}
 	}
 }
 
 @media (max-width: $bp4) {
-	.hero-content {
+	.credo-content {
 		&__title {
-			max-height: 232px;
+			max-height: 100px;
+		}
+		&__descr {
+			line-height: 30px;
 		}
 	}
 }
 
 @media (max-width: $bp5) {
-	.hero-content {
+	.credo-content {
 		padding: 15px 0;
 		&__title {
 			margin-bottom: 15px;
@@ -34,8 +38,6 @@
 		}
 		&__descr {
 			line-height: 20px;
-			margin-bottom: 15px;
-			max-height: 100px;
 		}
 	}
 }

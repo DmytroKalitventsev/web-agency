@@ -1,6 +1,4 @@
 .header {
-	position: sticky;
-	top: 0;
 	background: #fff;
 	border-bottom: 2px solid #adadad;
 }
@@ -11,6 +9,7 @@
 	@include flex;
 	height: 70px;
 	width: 70px;
+	margin: 15px 20px 15px 0;
 	&__img {
 		height: 60px;
 	}
@@ -22,22 +21,18 @@
 }
 .menu {
 	@include flex;
+	flex-wrap: wrap;
+	column-gap: 40px;
 	font-size: 26px;
 	line-height: 30px;
 	&__item {
-		padding: 35px 18px;
+		white-space: nowrap;
 		&-link {
-			white-space: nowrap;
+			padding: 20px 0;
 			transition: color .2s;
 			&:hover {
 				color: #f6ae48;
 			}
-		}
-		&:first-child {
-			color: #f6ae48;
-		}
-		&:last-child {
-			padding-right: 0;
 		}
 	}
 }

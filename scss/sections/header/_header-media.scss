@@ -1,24 +1,22 @@
-@media (max-width: $bp2) {
+@media (max-width: $bp1) {
 	.header-content {
-		@include flex(flex-start);
+		justify-content: flex-start;
 	}
 	.logo {
-		margin-left: 30px;
+		margin: 5px;
+		&__img {
+			height: 50px;
+		}
 	}
 	.menu-block {
 		@include flex;
 		order: -1;
+		margin-right: 15px;
 		&__button {
 			@include flex(center, center, column);
 			width: 50px;
 			height: 50px;
 			position: relative;
-			&::before {
-				transform: translateY(-8px);
-			}
-			&::after {
-				transform: translateY(8px);
-			}
 			&-item,
 			&::after,
 			&::before {
@@ -28,6 +26,12 @@
 				border-radius: 10px;
 				background: #000;
 				position: absolute;
+			}
+			&::before {
+				transform: translateY(-8px);
+			}
+			&::after {
+				transform: translateY(8px);
 			}
 		}
 	}

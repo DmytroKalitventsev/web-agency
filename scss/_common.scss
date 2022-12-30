@@ -62,6 +62,7 @@ button {
 .container {
 	max-width: 1245px;
 	margin: 0 auto;
+	padding: 0 5px;
 }
 
 .title {
@@ -73,7 +74,7 @@ button {
 		line-height: 72px;
 	}
 	&_h2 {
-		line-height: 54px;
+		line-height: 58px;
 	}
 }
 
@@ -82,6 +83,30 @@ button {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: rgba(193,193,193,0.2);
+}
+
+.price-block {
+	display: none;
+	width: 100%;
+	margin-top: 15px;
+	white-space: nowrap;
+	&__button-price {
+		@include flex;
+		border: 2px solid #fff;
+		height: 35px;
+		min-width: 130px;
+		max-width: 140px;
+		font-size: .75rem;
+		overflow: hidden
+	}
+	&__view {
+		@include flex;
+		height: 40px;
+		width: 40px;
+		&-img {
+			width: 22px;
+		}
+	}
 }
 
 @import "./media";

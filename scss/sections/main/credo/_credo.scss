@@ -1,35 +1,32 @@
-.hero {
+.credo {
 	background: silver;
 	background-image: 
 		linear-gradient(85deg,
 			rgba(48,50,99,0.67) 0%,
 			rgba(48,50,99,0.67) 100%),
-		url(../img/hero-bg.png);
+		url(../img/credo-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
 }
-
-.hero-content {
-	@include flex(center, center, column);
-	height: 810px;
-	padding: 70px 75px 0;
+.credo-content {
+	@include flex(flex-start, center, column);
+	height: 566px;
+	padding: 125px 85px 0;
 	&__title {
-		margin-bottom: 25px;
-		max-height: 144px;
+		color: #fff;
+		margin-bottom: 55px;
+		max-height: 106px;
 		overflow: hidden;
 	}
 	&__descr {
 		text-align: center;
-		margin-bottom: 55px;
 		color: white;
 		line-height: 36px;
-		max-width: 835px;
-		max-height: 108px;
+		max-width: 1043px;
+		max-height: 180px;
 		overflow: hidden;
 	}
 }
 
-@import "./achivments";
-
-@import "./hero-media"
+@import "./credo-media";
