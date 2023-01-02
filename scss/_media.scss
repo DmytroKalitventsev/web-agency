@@ -2,29 +2,27 @@
 	:root {
 		font-size: 20px;
 	}
-	.container {
-		padding: 0 15px;
-	}
 }
 
 @media (max-width: $bp3) {
 	:root {
 		font-size: 16px;
-		letter-spacing: 1;
+		letter-spacing: 1px;
+	}
+	.title_h1 {
+		line-height: 55px;
 	}
 	.animate {
-		animation: none;
+		animation: none !important;
 	}
 }
 
 @media (max-width: $bp4) {
-	.title {
-		&_h1 {
-			line-height: 58px;
-		}
-		&_h2 {
-			line-height: 48px;
-		}
+	.title_h1 {
+		line-height: 58px;
+	}
+	.title_h2 {
+		line-height: 48px;
 	}
 }
 
@@ -38,7 +36,7 @@
 			line-height: 35px;
 		}
 	}
-	.price-block__button-price {
+	.price-button__button-price {
 		min-width: 100px;
 	}
 }

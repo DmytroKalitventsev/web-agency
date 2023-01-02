@@ -1,18 +1,16 @@
 .credo {
 	background: silver;
-	background-image: 
-		linear-gradient(85deg,
-			rgba(48,50,99,0.67) 0%,
-			rgba(48,50,99,0.67) 100%),
+	background-image: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%),
 		url(../img/credo-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
-}
-.credo-content {
-	@include flex(flex-start, center, column);
-	height: 566px;
-	padding: 125px 85px 0;
+	&__container {
+		@include flex(flex-start, center, column);
+		height: 566px;
+		max-width: 1043px;
+		padding-top: 125px;
+	}
 	&__title {
 		color: #fff;
 		margin-bottom: 55px;
@@ -23,7 +21,6 @@
 		text-align: center;
 		color: white;
 		line-height: 36px;
-		max-width: 1043px;
 		max-height: 180px;
 		overflow: hidden;
 	}

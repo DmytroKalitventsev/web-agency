@@ -1,17 +1,23 @@
-:root {
-	--animate-duration: 2s;
-	--animate-delay: 1s;
-	--animate-repeat: 1;
-}
+$animate-duration: 2s;
+$animate-delay: 1s;
+$animate-repeat: 1;
 
 .animate {
 	animation-duration: 1s;
-	animation-duration: var(--animate-duration);
+	animation-duration: $animate-duration;
 	animation-fill-mode: both;
-}
-
-.animate_fadeInLeftBig {
-	animation-name: fadeInLeftBig;
+	&_fadeInLeftBig {
+		animation-name: fadeInLeftBig;
+	}
+	&_fadeInRightBig {
+		animation-name: fadeInRightBig;
+	}
+	&_fadeInUpBig {
+		animation-name: fadeInUpBig;
+	}
+	&_jackInTheBox {
+		animation-name: jackInTheBox;
+	}
 }
 
 @keyframes fadeInLeftBig {
@@ -26,10 +32,6 @@
 	}
 }
 
-.animate_fadeInRightBig {
-	animation-name: fadeInRightBig;
-}
-
 @keyframes fadeInRightBig {
 	from {
 		opacity: 0;
@@ -42,10 +44,6 @@
 	}
 }
 
-.animate_fadeInUpBig {
-	animation-name: fadeInUpBig;
-}
-
 @keyframes fadeInUpBig {
 	from {
 		opacity: 0;
@@ -56,10 +54,6 @@
 		opacity: 1;
 		transform: translate3d(0, 0, 0);
 	}
-}
-
-.animate_jackInTheBox {
-	animation-name: jackInTheBox;
 }
 
 @keyframes jackInTheBox {

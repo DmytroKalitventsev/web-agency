@@ -2,67 +2,31 @@
 	font-size: 24px;
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: 2px;
+	color: #000;
+	.animate {
+		animation: none !important;
+	}
 }
 
-*,
-*::before,
-*::after {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
-}
-
-a {
-	text-decoration: none;
-	color: inherit;
-	display: block;
-}
-
-ul,
-ol,
-li {
-	list-style: none;
-}
-
-span,
-img {
-	display: block;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: inherit;
-	font-size: inherit;
-}
-
-html,
 body {
-	height: 100%;
-	line-height: 1;
+	background-color: #fff;
 }
 
-button,
-input {
-	font-size: inherit;
-	font-weight: inherit;
-	color: inherit;
-	font-family: inherit;
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
 }
 
-button {
-	cursor: pointer;
-	background-color: inherit;
-}
-
-.container {
-	max-width: 1245px;
+[class*="__container"] {
+	max-width: 1260px;
 	margin: 0 auto;
-	padding: 0 5px;
+	padding: 0 15px;
+}
+
+.pages {
+	flex: 1 1 auto;
 }
 
 .title {
@@ -82,29 +46,37 @@ button {
 	font-family: tahoma;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: rgba(193,193,193,0.2);
+	color: rgba(193, 193, 193, 0.2);
 }
 
-.price-block {
-	display: none;
+.price-button {
+	@include flex(space-between);
 	width: 100%;
-	margin-top: 15px;
 	white-space: nowrap;
 	&__button-price {
-		@include flex;
+		display: inline-block;
+		text-align: center;
+		font-size: 0.74rem;
+		line-height: 21px;
+		color: #fff;
 		border: 2px solid #fff;
-		height: 35px;
-		min-width: 130px;
-		max-width: 140px;
-		font-size: .75rem;
-		overflow: hidden
+		padding: 6px 12px;
 	}
 	&__view {
 		@include flex;
 		height: 40px;
 		width: 40px;
-		&-img {
+		border-radius: 10px;
+		fill: #fff;
+		&:hover {
+			background-color: #ffffff36;
+			.price-button__icon {
+			}
+		}
+		&-icon {
+			transition: width .2s;
 			width: 22px;
+			height: 23px;
 		}
 	}
 }

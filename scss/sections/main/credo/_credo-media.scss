@@ -1,43 +1,36 @@
-@media (max-width: $bp1) {
-	.credo-content {
-		justify-content: center;
-		padding: 0;
-	}
-}
-
 @media (max-width: $bp3) {
-	.credo-content {
-		padding: 60px 0;
+	.credo__container {
+		padding-top: 60px;
+		padding-bottom: 80px;
 		height: initial;
-		&__title {
-			margin-bottom: 20px;
-		}
-		&__descr {
-			max-height: 240px;
-		}
+	}
+	.credo__title {
+		margin-bottom: 20px;
+	}
+	.credo__descr {
+		max-height: 240px;
 	}
 }
 
 @media (max-width: $bp4) {
-	.credo-content {
-		&__title {
-			max-height: 100px;
-		}
-		&__descr {
-			line-height: 30px;
-		}
+	.credo__title {
+		max-height: 100px;
+	}
+	.credo__descr {
+		line-height: 30px;
 	}
 }
 
 @media (max-width: $bp5) {
-	.credo-content {
-		padding: 15px 0;
-		&__title {
-			margin-bottom: 15px;
-			max-height: 140px;
-		}
-		&__descr {
-			line-height: 20px;
-		}
+	.credo__container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.credo__title {
+		margin-bottom: 15px;
+		max-height: 140px;
+	}
+	.credo__descr {
+		line-height: 20px;
 	}
 }

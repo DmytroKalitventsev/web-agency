@@ -1,40 +1,44 @@
 .header {
 	background: #fff;
 	border-bottom: 2px solid #adadad;
+	position: sticky;
+	width: 100%;
+	top: -1px;
+	z-index: 1000;
 }
-.header-content {
+.header__container {
 	@include flex(space-between);
+	min-height: 100px;
+	column-gap: 20px;
 }
 .logo {
-	@include flex;
-	height: 70px;
-	width: 70px;
-	margin: 15px 20px 15px 0;
+	position: relative;
+	z-index: 20;
 	&__img {
 		height: 60px;
 	}
 }
-.menu-block {
-	&__button {
-		display: none;
-	}
-}
 .menu {
 	@include flex;
-	flex-wrap: wrap;
-	column-gap: 40px;
-	font-size: 26px;
-	line-height: 30px;
-	&__item {
+	&__list {
+		@include flex;
+		flex-wrap: wrap;
+		column-gap: 40px;
+		font-size: 26px;
+		line-height: 30px;
 		white-space: nowrap;
-		&-link {
-			padding: 20px 0;
-			transition: color .2s;
-			&:hover {
-				color: #f6ae48;
-			}
+	}
+	&__link {
+		display: block;
+		padding: 15px 0;
+		transition: color 0.2s;
+		&:hover {
+			color: #f6ae48;
 		}
 	}
 }
+.menu-button {
+	display: none;
+}
 
-@import "./header-media"
+@import "./header-media";

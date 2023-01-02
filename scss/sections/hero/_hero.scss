@@ -1,19 +1,16 @@
 .hero {
 	background: silver;
-	background-image: 
-		linear-gradient(85deg,
-			rgba(48,50,99,0.67) 0%,
-			rgba(48,50,99,0.67) 100%),
+	background-image: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%),
 		url(../img/hero-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
-}
-
-.hero-content {
-	@include flex(center, center, column);
-	height: 810px;
-	padding: 70px 75px 0;
+	&__container {
+		@include flex(center, center, column);
+		height: 810px;
+		max-width: 1100px;
+		padding-top: 55px;
+	}
 	&__title {
 		margin-bottom: 25px;
 		max-height: 144px;
@@ -32,4 +29,4 @@
 
 @import "./achivments";
 
-@import "./hero-media"
+@import "./hero-media";

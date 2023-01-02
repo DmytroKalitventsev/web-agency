@@ -1,13 +1,17 @@
-//!Deal with the slowness of achievement blocks
-
 .achivments-block {
 	@include flex;
+	flex-wrap: wrap;
+	gap: 60px;
+	width: 100%;
+
 	@media (max-width: $bp3) {
-		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	@media (max-width: $bp4) {
+		gap: 20px;
 	}
 }
-
-$achivIconWidth: 28px;
 .achivment {
 	@include flex(center, center, column);
 	color: white;
@@ -18,14 +22,13 @@ $achivIconWidth: 28px;
 	border-right: 2px solid white;
 	border-bottom: 2px solid white;
 	position: relative;
-	margin-right: 60px;
 	&::before,
 	&::after {
 		content: "";
 		position: absolute;
 		height: 2px;
-		background:white;
-		width: calc((100% - 50px) / 2);
+		background: white;
+		width: calc((100% - 45px) / 2);
 		top: 0;
 	}
 	&::before {
@@ -34,16 +37,17 @@ $achivIconWidth: 28px;
 	&::after {
 		right: 0;
 	}
-	&:last-child {
-		margin-right: 0;
-	}
-
 	&__icon {
 		position: absolute;
 		top: 0;
 		left: 50%;
-		transform: translate(-50%, -50%);
-		width: $achivIconWidth;
+		transform: translate(-50%, -40%);
+		width: 35px;
+		height: 35px;
+		fill: #fff;
+		&_transform {
+			transform: translate(-43%, -40%);
+		}
 	}
 	&__value {
 		font-size: 2rem;
@@ -53,7 +57,7 @@ $achivIconWidth: 28px;
 		overflow: hidden;
 	}
 	&__descr {
-		font-size: .75rem;
+		font-size: 0.75rem;
 		text-align: center;
 		max-height: 36px;
 		max-width: 211px;
@@ -62,7 +66,6 @@ $achivIconWidth: 28px;
 
 	@media (max-width: $bp1) {
 		width: 200px;
-		margin-right: 30px;
 		&__value {
 			max-width: 170px;
 		}
@@ -72,10 +75,6 @@ $achivIconWidth: 28px;
 	}
 
 	@media (max-width: $bp3) {
-		margin: 25px;
-		&:last-child {
-			margin-right: 30px;
-		}
 		&__value {
 			max-width: 140px;
 		}
@@ -86,10 +85,6 @@ $achivIconWidth: 28px;
 
 	@media (max-width: $bp4) {
 		width: 170px;
-		margin: 10px;
-		&:last-child {
-			margin-right: 10px;
-		}
 	}
 
 	@media (max-width: $bp5) {
@@ -99,7 +94,7 @@ $achivIconWidth: 28px;
 		height: 90px;
 		&::before,
 		&::after {
-			height: calc((100% - 50px) / 2);
+			height: calc((100% - 30px) / 2);
 			width: 2px;
 			top: initial;
 		}
@@ -110,16 +105,18 @@ $achivIconWidth: 28px;
 			left: 0;
 			bottom: 0;
 		}
-		&:last-child {
-			margin-right: 10px;
-		}
 		&__descr {
 			max-height: 12px;
 		}
 		&__icon {
+			transform: translate(-45%, -45%);
 			width: 25px;
+			height: 25px;
 			top: 50%;
 			left: 0;
+			&_transform {
+				transform: translate(-35%, -45%);
+			}
 		}
 	}
 }
