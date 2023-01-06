@@ -1,3 +1,14 @@
+//!Animation by "name"
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+//!Animation by "class"
 $animate-duration: 2s;
 $animate-delay: 1s;
 $animate-repeat: 1;

@@ -1,13 +1,14 @@
 .achivments-block {
 	@include flex;
 	flex-wrap: wrap;
-	gap: 60px;
+	gap: 4.87%;
 	width: 100%;
 
 	@media (max-width: $bp3) {
 		gap: 30px;
+		padding: 0 10px;
 	}
-
+	
 	@media (max-width: $bp4) {
 		gap: 20px;
 	}
@@ -44,7 +45,7 @@
 		transform: translate(-50%, -40%);
 		width: 35px;
 		height: 35px;
-		fill: #fff;
+		color: #fff;
 		&_transform {
 			transform: translate(-43%, -40%);
 		}
@@ -69,29 +70,36 @@
 		&__value {
 			max-width: 170px;
 		}
-		&__descr {
-			max-height: 30px;
-		}
 	}
 
 	@media (max-width: $bp3) {
+		flex: 1 1 47%;
+		height: 130px;
+		&:first-child {
+			flex: 1 1 100%;
+		}
+		&__icon {
+			width: 30px;
+			height: 30px;
+		}
 		&__value {
 			max-width: 140px;
+			font-size: 2.5rem;
 		}
 		&__descr {
-			max-height: 24px;
+			font-size: 1rem;
 		}
 	}
 
 	@media (max-width: $bp4) {
-		width: 170px;
-	}
-
-	@media (max-width: $bp5) {
+		flex: 0 1 80%;
 		border-top: 2px solid white;
 		border-left: none;
 		width: 220px;
-		height: 90px;
+		height: 100px;
+		&:first-child {
+			flex: 0 1 80%;
+		}
 		&::before,
 		&::after {
 			height: calc((100% - 30px) / 2);
@@ -105,9 +113,6 @@
 			left: 0;
 			bottom: 0;
 		}
-		&__descr {
-			max-height: 12px;
-		}
 		&__icon {
 			transform: translate(-45%, -45%);
 			width: 25px;
@@ -117,6 +122,12 @@
 			&_transform {
 				transform: translate(-35%, -45%);
 			}
+		}
+		&__value {
+			font-size: 2.2rem;
+		}
+		&__descr {
+			font-size: 0.85rem;
 		}
 	}
 }

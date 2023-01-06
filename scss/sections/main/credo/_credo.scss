@@ -1,17 +1,18 @@
 .credo {
 	background: silver;
 	background-image: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%),
-		url(../img/credo-bg.png);
+		url(../img/credo-bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
+	padding-top: 120px;
+	padding-bottom: 155px;
 	&__container {
-		@include flex(flex-start, center, column);
-		height: 566px;
-		max-width: 1043px;
-		padding-top: 125px;
+		@include flex(center, center, column);
+		max-width: 1005px;
 	}
 	&__title {
+		text-align: center;
 		color: #fff;
 		margin-bottom: 55px;
 		max-height: 106px;

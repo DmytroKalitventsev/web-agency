@@ -1,11 +1,8 @@
 :root {
 	font-size: 24px;
 	font-family: Arial, Helvetica, sans-serif;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	color: #000;
-	.animate {
-		animation: none !important;
-	}
 }
 
 body {
@@ -38,15 +35,35 @@ body {
 		line-height: 72px;
 	}
 	&_h2 {
+		text-align: left;
 		line-height: 58px;
 	}
 }
 
 .background-text {
+	position: absolute;
+	top: 2%;
+	left: -9%;
+	z-index: 1;
 	font-family: tahoma;
 	font-weight: bold;
+	letter-spacing: 4px;
+	font-size: 3rem;
+	white-space: nowrap;
 	text-transform: uppercase;
-	color: rgba(193, 193, 193, 0.2);
+	line-height: 60px;
+	color: #00000033;
+	@media (max-width: $bp2) {
+		font-size: 2.7rem;
+	}
+	@media (max-width: $bp3) {
+		left: -2%;
+		top: -17%;
+		font-size: 2.3rem;
+	}
+	@media (max-width: $bp5) {
+		letter-spacing: 3px;
+	}
 }
 
 .price-button {
@@ -61,22 +78,48 @@ body {
 		color: #fff;
 		border: 2px solid #fff;
 		padding: 6px 12px;
+		transition: border-color 0.2s;
+		@media (max-width: $bp5) {
+			min-width: 100px;
+		}
 	}
 	&__view {
 		@include flex;
 		height: 40px;
 		width: 40px;
 		border-radius: 10px;
-		fill: #fff;
-		&:hover {
-			background-color: #ffffff36;
-			.price-button__icon {
-			}
+	}
+	&__icon {
+		transition: color 0.2s;
+		color: #fff;
+		width: 22px;
+		height: 23px;
+	}
+}
+
+.content-about {
+	&__body-title {
+		position: relative;
+		z-index: 2;
+	}
+	&__title {
+		text-align: left;
+		font-size: 1.5rem;
+		line-height: 2;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	&__descr {
+		line-height: 2; 
+		max-width: 570px;
+	}
+	@media (max-width: $bp3) {
+		&__title {
+			margin-bottom: 0;
 		}
-		&-icon {
-			transition: width .2s;
-			width: 22px;
-			height: 23px;
+		&__descr {
+			font-size: .85rem;
+			max-width: initial;
 		}
 	}
 }

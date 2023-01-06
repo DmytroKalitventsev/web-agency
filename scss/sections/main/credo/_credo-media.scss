@@ -1,14 +1,13 @@
 @media (max-width: $bp3) {
-	.credo__container {
+	.credo {
 		padding-top: 60px;
 		padding-bottom: 80px;
-		height: initial;
-	}
-	.credo__title {
-		margin-bottom: 20px;
-	}
-	.credo__descr {
-		max-height: 240px;
+		&__title {
+			margin-bottom: 20px;
+		}
+		&__descr {
+			max-height: 240px;
+		}
 	}
 }
 
@@ -22,15 +21,15 @@
 }
 
 @media (max-width: $bp5) {
-	.credo__container {
+	.credo {
 		padding-top: 30px;
-		padding-bottom: 30px;
-	}
-	.credo__title {
-		margin-bottom: 15px;
-		max-height: 140px;
-	}
-	.credo__descr {
-		line-height: 20px;
+		padding-bottom: 60px;
+		&__title {
+			margin-bottom: 15px;
+			max-height: 140px;
+		}
+		&__descr {
+			line-height: 20px;
+		}
 	}
 }

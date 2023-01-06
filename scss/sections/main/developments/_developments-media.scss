@@ -1,0 +1,39 @@
+@media (max-width: $bp1) {
+	.developments {
+		padding-top: 110px;
+		padding-bottom: 80px;
+	}
+}
+
+@media (max-width: $bp3) {
+	.developments__promotion {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.developments__content {
+		margin-left: 0;
+	}
+	.developments__partners {
+		margin-top: 20px;
+		flex-direction: row;
+	}
+	.developments__img {
+		width: 150px;
+	}
+}
+
+@media (max-width: $bp4) {
+	.developments {
+		padding-top: 90px;
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: $bp5) {
+	.developments__partners {
+		gap: 20px;
+	}
+	.developments__img {
+		width: 120px;
+	}
+}

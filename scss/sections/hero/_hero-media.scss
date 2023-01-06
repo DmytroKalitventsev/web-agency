@@ -1,39 +1,40 @@
 @media (max-width: $bp3) {
-	.hero__container {
-		height: initial;
+	.hero {
 		padding-top: 130px;
 		padding-bottom: 100px;
-	}
-	.hero__title {
-		margin-bottom: 20px;
-	}
-	.hero__descr {
-		margin-bottom: 40px;
+		&__title {
+			margin-bottom: 20px;
+		}
 	}
 }
 
 @media (max-width: $bp4) {
-	.hero__container {
-		padding-top: 70px;
-		padding-bottom: 70px;
-	}
-	.hero__title {
-		max-height: 232px;
+	.hero {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__content {
+			margin-bottom: 30px;
+		}
+		&__title {
+			max-height: 232px;
+		}
+		&__descr {
+			max-height: 180px;
+		}
 	}
 }
 
 @media (max-width: $bp5) {
-	.hero__container {
+	.hero {
 		padding-top: 50px;
 		padding-bottom: 50px;
-	}
-	.hero__title {
-		margin-bottom: 15px;
-		max-height: 140px;
-	}
-	.hero__descr {
-		line-height: 20px;
-		margin-bottom: 15px;
-		max-height: 100px;
+		&__title {
+			margin-bottom: 15px;
+			max-height: 140px;
+		}
+		&__descr {
+			line-height: 20px;
+			max-height: 120px;
+		}
 	}
 }

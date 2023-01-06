@@ -1,27 +1,25 @@
-//! reliability background letters
-
 .studio {
-	letter-spacing: 1px;
+	padding-top: 165px;
+	padding-bottom: 290px;
 	&__container {
 		@include flex(center, center, column);
-		padding-top: 165px;
-		padding-bottom: 290px;
 	}
 	&__content {
 		@include flex(space-between);
 		width: 100%;
 		margin-bottom: 205px;
-		position: relative;
 	}
 	&__title {
-		z-index: 2;
 		margin-right: 100px;
 		flex: 0 0 175px;
 		max-height: 108px;
 		overflow: hidden;
 	}
-	&__descr {
+	&__body-descr {
+		position: relative;
 		z-index: 2;
+	}
+	&__descr {
 		margin-right: 70px;
 		font-size: 0.85rem;
 		line-height: 28px;
@@ -29,14 +27,16 @@
 		max-height: 305px;
 		overflow: hidden;
 	}
-	&__background-text {
-		z-index: 1;
+	& .background-text {
+		@include flex(flex-start);
+		width: 100%;
+		height: 100%;
+		top: -3%;
+		left: -12%;
+		color: #c1c1c133;
 		font-size: 16rem;
 		letter-spacing: 17px;
-		position: absolute;
-		top: 45%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		line-height: 310px;
 	}
 }
 

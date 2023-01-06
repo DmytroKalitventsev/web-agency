@@ -7,7 +7,6 @@
 @media (max-width: $bp3) {
 	:root {
 		font-size: 16px;
-		letter-spacing: 1px;
 	}
 	.title_h1 {
 		line-height: 55px;
@@ -35,8 +34,5 @@
 		&_h2 {
 			line-height: 35px;
 		}
-	}
-	.price-button__button-price {
-		min-width: 100px;
 	}
 }

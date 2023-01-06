@@ -4,22 +4,21 @@
 	position: sticky;
 	width: 100%;
 	top: -1px;
-	z-index: 1000;
-}
-.header__container {
-	@include flex(space-between);
-	min-height: 100px;
-	column-gap: 20px;
+	z-index: 10;
+	&__container {
+		@include flex(space-between);
+		min-height: 100px;
+		column-gap: 20px;
+	}
 }
 .logo {
 	position: relative;
-	z-index: 20;
+	z-index: 11;
 	&__img {
 		height: 60px;
 	}
 }
 .menu {
-	@include flex;
 	&__list {
 		@include flex;
 		flex-wrap: wrap;

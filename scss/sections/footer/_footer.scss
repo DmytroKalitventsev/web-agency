@@ -1,0 +1,11 @@
+.footer {
+	background-color: #f6ae48;
+	&__container {
+		min-height: 110px;
+	}
+	@media (max-width: $bp3) {
+		&__container {
+			min-height: 80px;
+		}
+	}
+}

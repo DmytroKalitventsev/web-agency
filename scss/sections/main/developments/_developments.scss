@@ -1,0 +1,29 @@
+.developments {
+	padding-top: 208px;
+	padding-bottom: 117px;
+	&__container {
+		@include flex(center, center, column);
+		position: relative;
+	}
+	&__promotion {
+		@include flex(flex-start);
+		width: 100%;
+		column-gap: 15%;
+	}
+	&__content {
+		margin-left: 75px;
+	}
+	&__partners {
+		@include flex(center, center, column);
+		gap: 40px;
+	}
+	&__partner {
+	}
+	&__img {
+		width: 200px;
+	}
+}
+
+@import "./developments-services";
+
+@import "./developments-media";

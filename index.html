@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./img/shortcut-icon.svg">
 	<title>WEB Agency</title>
 	<link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -13,14 +14,16 @@
 	<div class="wrapper">
 		<div class="hero">
 			<div class="hero__container">
-				<h1 class="hero__title title title_h1">
-					НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.
-				</h1>
-				<p class="hero__descr">
-					Большинство веб-студий считают окончанием работы загрузку
-					сайта в интернет. Но почти никто не умеет делать проекты,
-					которые работают и приносят прибыль.
-				</p>
+				<div class="hero__content">
+					<h1 class="hero__title title title_h1">
+						НАШИ САЙТЫ ЗАСТАВЛЯЮТ РАБОТАТЬ ВАШ БИЗНЕС.
+					</h1>
+					<p class="hero__descr">
+						Большинство веб-студий считают окончанием работы загрузку
+						сайта в интернет. Но почти никто не умеет делать проекты,
+						которые работают и приносят прибыль.
+					</p>
+				</div>
 				<div class="achivments-block">
 					<div class="achivment wow animate animate_fadeInLeftBig">
 						<svg class="achivment__icon">
@@ -49,29 +52,26 @@
 		<header class="header">
 			<div class="header__container">
 				<a class="logo wow animate animate_fadeInLeftBig" href="#">
-					<img class="logo__img" src="./img/lo
-					go.svg" alt="logo">
+					<img class="logo__img" src="./img/logo.svg" alt="logo">
 				</a>
 				<nav class="menu">
-					<div class="menu__body">
-						<ul class="menu__list">
-							<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".1s">
-								<a class="menu__link" href="#">Главная</a>
-							</li>
-							<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".2s">
-								<a class="menu__link" href="#">О нас</a>
-							</li>
-							<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".3s">
-								<a class="menu__link" href="#">Услуги</a>
-							</li>
-							<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".4s">
-								<a class="menu__link" href="#">Наши работы</a>
-							</li>
-							<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".5s">
-								<a class="menu__link" href="#">Контакты</a>
-							</li>
-						</ul>
-					</div>
+					<ul class="menu__list">
+						<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".1s">
+							<a class="menu__link" href="#">Главная</a>
+						</li>
+						<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".2s">
+							<a class="menu__link" href="#">О нас</a>
+						</li>
+						<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".3s">
+							<a class="menu__link" href="#">Услуги</a>
+						</li>
+						<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".4s">
+							<a class="menu__link" href="#">Наши работы</a>
+						</li>
+						<li class="menu__item wow animate animate_fadeInRightBig" data-wow-delay=".5s">
+							<a class="menu__link" href="#">Контакты</a>
+						</li>
+					</ul>
 				</nav>
 				<button class="menu-button" type="button">
 					<span class="menu-button__item"></span>
@@ -83,14 +83,14 @@
 				<div class="studio__container">
 					<div class="studio__content">
 						<h2 class="studio__title title title_h2">Студия</h2>
-						<p class="studio__descr">
-							Основная специализация — проектирование сайов и landing page.
-							Наша команда, состоящая из дизайнеров, маркетологов и программистов,
-							поддерживает каждый проект на протяжении всей его жизни. Студия
-							занимается разработкой индивидуального дизайна, оптимизацией
-							скорости работы продукта, предоставляет услуги по продвижению сайтов.
-						</p>
-						<div class="studio__background-text">
+						<div class="studio__body-descr">
+							<p class="studio__descr">
+								Основная специализация — проектирование сайов и landing page.
+								Наша команда, состоящая из дизайнеров, маркетологов и программистов,
+								поддерживает каждый проект на протяжении всей его жизни. Студия
+								занимается разработкой индивидуального дизайна, оптимизацией
+								скорости работы продукта, предоставляет услуги по продвижению сайтов.
+							</p>
 							<span class="background-text wow animate animate_jackInTheBox" data-wow-delay="1s">WE</span>
 						</div>
 					</div>
@@ -109,15 +109,13 @@
 								и рассчитывается исходя из пожеланий и
 								требований клиента.
 							</p>
-							<div class="studio-service__price-hidden">
-								<div class="price-button">
-									<a class="price-button__button-price" href="#">от 1000 грн</a>
-									<a class="price-button__view" href="#">
-										<svg class="price-button__icon">
-											<use xlink:href="./img/svg/general.svg#arrow"></use>
-										</svg>
-									</a>
-								</div>
+							<div class="price-button">
+								<a class="price-button__button-price" href="#">от 1000 грн</a>
+								<a class="price-button__view" href="#">
+									<svg class="price-button__icon">
+										<use xlink:href="./img/svg/general.svg#arrow"></use>
+									</svg>
+								</a>
 							</div>
 						</div>
 						<div class="studio-service wow animate animate_fadeInUpBig">
@@ -133,19 +131,17 @@
 								системах, и, таким образом, позволяет
 								увеличить его целевую посещаемость.
 							</p>
-							<div class="studio-service__price-hidden">
-								<div class="price-button">
-									<a class="price-button__button-price" href="#">от 1000 грн</a>
-									<a class="price-button__view" href="#">
-										<svg class="price-button__icon">
-											<use xlink:href="./img/svg/general.svg#arrow"></use>
-										</svg>
-									</a>
-								</div>
+							<div class="price-button">
+								<a class="price-button__button-price" href="#">от 1000 грн</a>
+								<a class="price-button__view" href="#">
+									<svg class="price-button__icon">
+										<use xlink:href="./img/svg/general.svg#arrow"></use>
+									</svg>
+								</a>
 							</div>
 						</div>
 						<div class="studio-service wow animate animate_fadeInRightBig">
-							<svg class="studio-service__icon studio-service__icon_mg">
+							<svg class="studio-service__icon studio-service__icon_size">
 								<use xlink:href="./img/svg/studio.svg#heart"></use>
 							</svg>
 							<h2 class="studio-service__title">Поддержка</h2>
@@ -157,15 +153,13 @@
 								Мы готовы взять эти проблемы на себя и
 								предоставлять нужные услуги удаленно.
 							</p>
-							<div class="studio-service__price-hidden">
-								<div class="price-button">
-									<a class="price-button__button-price" href="#">от 1000 грн</a>
-									<a class="price-button__view" href="#">
-										<svg class="price-button__icon">
-											<use xlink:href="./img/svg/general.svg#arrow"></use>
-										</svg>
-									</a>
-								</div>
+							<div class="price-button">
+								<a class="price-button__button-price" href="#">от 1000 грн</a>
+								<a class="price-button__view" href="#">
+									<svg class="price-button__icon">
+										<use xlink:href="./img/svg/general.svg#arrow"></use>
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -183,9 +177,88 @@
 					</p>
 				</div>
 			</section>
-			<section class="development">
-				<div class="development__container">
-
+			<section class="developments">
+				<div class="developments__container">
+					<div class="developments-services">
+						<div class="developments-title">
+							<h2 class="developments-title__title title title_h2">Разработка</h2>
+							<div class="developments-title__icon">
+								<svg class="developments-title__icon-item">
+									<use xlink:href="./img/svg/developments.svg#gears1"></use>
+								</svg>
+								<svg class="developments-title__icon-item">
+									<use xlink:href="./img/svg/developments.svg#gears2"></use>
+								</svg>
+								<svg class="developments-title__icon-item">
+									<use xlink:href="./img/svg/developments.svg#gears3"></use>
+								</svg>
+								<svg class="developments-title__icon-item">
+									<use xlink:href="./img/svg/developments.svg#gear"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="developments-prices">
+							<div class="developments-price">
+								<h2 class="developments-price__title title title_h2">LANDING PAGE</h2>
+								<div class="price-button">
+									<a class="price-button__button-price" href="#">от 15000 грн</a>
+									<a class="price-button__view" href="#">
+										<svg class="price-button__icon">
+											<use xlink:href="./img/svg/general.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="developments-price">
+								<h2 class="developments-price__title title title_h2">ВЕБ-САЙТ</h2>
+								<div class="price-button">
+									<a class="price-button__button-price" href="#">от 10000 грн</a>
+									<a class="price-button__view" href="#">
+										<svg class="price-button__icon">
+											<use xlink:href="./img/svg/general.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="developments-price">
+								<h2 class="developments-price__title title title_h2">ИНТЕРНЕТ МАГАЗИН</h2>
+								<div class="price-button">
+									<a class="price-button__button-price" href="#">от 20000 грн</a>
+									<a class="price-button__view" href="#">
+										<svg class="price-button__icon">
+											<use xlink:href="./img/svg/general.svg#arrow"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="developments__promotion">
+						<div class="developments__content content-about">
+							<div class="content-about__body-title">
+								<h2 class="content-about__title">ПРЕВЫЕ В ПОИСКЕ</h2>
+								<span class="background-text wow animate animate_jackInTheBox" data-wow-delay="1s">
+									BE THE FIRST
+								</span>
+							</div>
+							<p class="content-about__descr">
+								Мы предлагаем услуги по SEO продвижению
+								сайтов в ведущих поисковых системах Yandex
+								и Google. Поисковое продвижение сайта в
+								нашей веб-студии — это гарантированное
+								присутствие на лидирующих позициях и
+								привлечение необходимой аудитории.
+							</p>
+						</div>
+						<div class="developments__partners">
+							<a class="developments__partner" href="#">
+								<img class="developments__img" src="./img/developments/partner1.png" alt="#">
+							</a>
+							<a class="developments__partner" href="#">
+								<img class="developments__img" src="./img/developments/partner2.png" alt="#">
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
