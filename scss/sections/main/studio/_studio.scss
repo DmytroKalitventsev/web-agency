@@ -11,9 +11,6 @@
 	}
 	&__title {
 		margin-right: 100px;
-		flex: 0 0 175px;
-		max-height: 108px;
-		overflow: hidden;
 	}
 	&__body-descr {
 		position: relative;
@@ -24,8 +21,6 @@
 		font-size: 0.85rem;
 		line-height: 28px;
 		max-width: 760px;
-		max-height: 305px;
-		overflow: hidden;
 	}
 	& .background-text {
 		@include flex(flex-start);

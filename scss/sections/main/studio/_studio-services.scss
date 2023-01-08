@@ -13,6 +13,7 @@
 	@include flex(center, flex-start, column);
 	padding: 15px 25px;
 	transition: background-color 0.5s;
+	cursor: pointer;
 	&:hover {
 		background-color: #f6ae48;
 		color: #fff;
@@ -39,25 +40,10 @@
 		font-size: 0.85rem;
 		margin-bottom: 10px;
 		font-weight: bold;
-		max-height: 41px;
-		max-width: 370px;
-		overflow: hidden;
 	}
 	&__descr {
 		line-height: 24px;
 		font-size: 0.6rem;
-		max-height: 364px;
-		max-width: 370px;
-		overflow: hidden;
-	}
-	& .price-button {
-		display: none;
-	}
-
-	@media (max-width: $bp1) {
-		&__title {
-			max-height: 34px;
-		}
 	}
 
 	@media (max-width: $bp2) {
@@ -82,12 +68,7 @@
 			}
 		}
 		&__title {
-			max-height: 28px;
 			margin-bottom: 0;
-		}
-		&__descr {
-			max-width: initial;
-			max-height: 240px;
 		}
 	}
 

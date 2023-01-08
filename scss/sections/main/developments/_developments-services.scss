@@ -115,6 +115,7 @@
 	width: 366px;
 	height: 315px;
 	padding: 60px 38px 35px 28px;
+	cursor: pointer;
 	&:nth-child(1) {
 		background-image: $serviceBgOverlapping, url(../img/developments/services-bg1.webp);
 		&:hover {

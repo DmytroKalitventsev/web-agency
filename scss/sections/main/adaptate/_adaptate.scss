@@ -1,0 +1,59 @@
+.adaptate {
+	padding-top: 210px;
+	padding-bottom: 160px;
+	&__container {
+		@include flex(flex-start, flex-start);
+		column-gap: 100px;
+		position: relative;
+	}
+	&__devices {
+		position: relative;
+		top: 0%;
+		right: 0%;
+		@include flex;
+	}
+	&__device {
+		position: absolute;
+		&_iphone {
+			top: 175px;
+			left: -48px;
+			.adaptate__img {
+				&:last-child {
+					width: 101px;
+					height: 174px;
+					top: 28px;
+					left: 7px;
+				}
+			}
+		}
+		&_ipad {
+			top: 58px;
+			left: 123px;
+			.adaptate__img {
+				&:last-child {
+					width: 211px;
+					height: 283px;
+					top: 31px;
+					left: 18px;
+				}
+			}
+		}
+		&_macbook {
+			top: -27px;
+			right: -391px;
+			.adaptate__img {
+				&:last-child {
+					width: 567px;
+					height: 356px;
+					top: 28px;
+					left: 91px;
+				}
+			}
+		}
+	}
+	&__img {
+		position: absolute;
+	}
+}
+
+@import "./adaptate-media";

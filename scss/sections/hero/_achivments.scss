@@ -54,22 +54,14 @@
 		font-size: 2rem;
 		font-weight: bold;
 		margin-bottom: 5px;
-		max-width: 200px;
-		overflow: hidden;
 	}
 	&__descr {
 		font-size: 0.75rem;
 		text-align: center;
-		max-height: 36px;
-		max-width: 211px;
-		overflow: hidden;
 	}
 
 	@media (max-width: $bp1) {
 		width: 200px;
-		&__value {
-			max-width: 170px;
-		}
 	}
 
 	@media (max-width: $bp3) {
@@ -83,7 +75,6 @@
 			height: 30px;
 		}
 		&__value {
-			max-width: 140px;
 			font-size: 2.5rem;
 		}
 		&__descr {

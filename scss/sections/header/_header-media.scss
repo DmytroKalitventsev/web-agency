@@ -4,7 +4,7 @@
 	}
 	.menu__list {
 		column-gap: 25px;
-		font-size: 23px;
+		font-size: 1.1rem;
 	}
 }
 
@@ -13,7 +13,7 @@
 		min-height: 70px;
 	}
 	.logo__img {
-		height: 50px;
+		max-height: 50px;
 	}
 	.menu {
 		position: fixed;
@@ -37,8 +37,15 @@
 			transition: left 0.3s ease 0s;
 			border-bottom: 2px solid #adadad;
 		}
+		&__list {
+			flex-direction: column;
+			text-align: center;
+			font-size: 2rem;
+		}
+		&__link {
+			padding: 20px 0;
+		}
 	}
-
 	.menu-open {
 		& .logo {
 			position: fixed;
@@ -63,12 +70,6 @@
 		& .menu-button::after {
 			transform: rotate(45deg);
 		}
-	}
-
-	.menu__list {
-		flex-direction: column;
-		text-align: center;
-		font-size: 32px;
 	}
 	.menu-button {
 		@include flex(center, center, column);

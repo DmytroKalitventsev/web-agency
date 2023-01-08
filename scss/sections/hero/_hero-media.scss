@@ -15,12 +15,6 @@
 		&__content {
 			margin-bottom: 30px;
 		}
-		&__title {
-			max-height: 232px;
-		}
-		&__descr {
-			max-height: 180px;
-		}
 	}
 }
 
@@ -30,11 +24,9 @@
 		padding-bottom: 50px;
 		&__title {
 			margin-bottom: 15px;
-			max-height: 140px;
 		}
 		&__descr {
 			line-height: 20px;
-			max-height: 120px;
 		}
 	}
 }

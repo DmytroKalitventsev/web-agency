@@ -15,7 +15,7 @@
 	position: relative;
 	z-index: 11;
 	&__img {
-		height: 60px;
+		max-height: 60px;
 	}
 }
 .menu {
@@ -23,7 +23,7 @@
 		@include flex;
 		flex-wrap: wrap;
 		column-gap: 40px;
-		font-size: 26px;
+		font-size: 1.1rem;
 		line-height: 30px;
 		white-space: nowrap;
 	}

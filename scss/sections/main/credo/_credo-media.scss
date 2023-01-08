@@ -5,16 +5,10 @@
 		&__title {
 			margin-bottom: 20px;
 		}
-		&__descr {
-			max-height: 240px;
-		}
 	}
 }
 
 @media (max-width: $bp4) {
-	.credo__title {
-		max-height: 100px;
-	}
 	.credo__descr {
 		line-height: 30px;
 	}
@@ -26,7 +20,6 @@
 		padding-bottom: 60px;
 		&__title {
 			margin-bottom: 15px;
-			max-height: 140px;
 		}
 		&__descr {
 			line-height: 20px;

@@ -10,17 +10,12 @@
 		width: 100%;
 		column-gap: 15%;
 	}
-	&__content {
-		margin-left: 75px;
-	}
 	&__partners {
 		@include flex(center, center, column);
 		gap: 40px;
 	}
-	&__partner {
-	}
 	&__img {
-		width: 200px;
+		max-width: 200px;
 	}
 }
 
