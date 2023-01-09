@@ -1,0 +1,47 @@
+@media (max-width: $bp1) {
+	.projects {
+		& .background-text {
+			letter-spacing: 3px;
+			font-size: 3rem;
+			top: 17%;
+		}
+		&__heared {
+			min-height: 100px;
+		}
+		&__footer {
+			min-height: 100px;
+		}
+		&__button {
+			font-size: .8rem;
+			padding: 19px 29px;
+		}
+	}
+}
+
+@media (max-width: $bp3) {
+	.projects__heared {
+		min-height: 80px;
+	}
+	.projects__footer {
+		min-height: 80px;
+	}
+	.projects__button {
+		padding: 17px 27px;
+	}
+}
+
+@media (max-width: $bp5) {
+	.projects {
+		& .background-text {
+			letter-spacing: 2px;
+			font-size: 2.2rem;
+			top: 25%;
+		}
+		&__title {
+			font-size: 1.3rem;
+		}
+		&__button {
+			padding: 15px 20px;
+		}
+	}
+}

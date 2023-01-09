@@ -46,11 +46,16 @@ body {
 }
 
 button,
-input {
+input,
+textarea {
 	font-size: inherit;
 	font-weight: inherit;
 	color: inherit;
 	font-family: inherit;
+}
+
+textarea {
+	resize: none;
 }
 
 button {

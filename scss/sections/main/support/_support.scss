@@ -1,0 +1,12 @@
+.support {
+	padding-top: 150px;
+	padding-bottom: 230px;
+	&__container {
+		@include flex(flex-start, center);
+		column-gap: 4%;
+	}
+	&__img {
+		&-item {
+		}
+	}
+}

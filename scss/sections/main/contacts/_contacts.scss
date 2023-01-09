@@ -1,0 +1,78 @@
+.contacts {
+	background: silver;
+	background-image: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%),
+		url(../img/contacts-bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	color: #fff;
+	padding-top: 120px;
+	padding-bottom: 115px;
+	&__container {
+		@include flex(flex-start, flex-start);
+		column-gap: 15%;
+	}
+	&__content {
+		margin-left: 50px;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 1.25rem;
+		letter-spacing: 2px;
+		margin-bottom: 45px;
+	}
+	&__descr {
+		max-width: 355px;
+		font-size: .75rem;
+		line-height: 1.5;
+	}
+}
+.contacts-user {
+	flex: 0 1 615px;
+	&__body-info {
+		@include flex(flex-end, flex-start);
+		column-gap: 60px;
+		margin-top: 15px;
+	}
+	&__info {
+		font-size: .55rem;
+		line-height: 1.7;
+	}
+	&__button {
+		background-color: #f6ae48;
+		padding: 15px 28px;
+		font-size: .6rem;
+		&:hover {
+			background-color: #ff9500;
+		}
+	}
+}
+.contacts-form {
+	@include flex(center, stretch, column);
+	max-width: 615px;
+	border: 2.5px solid #fff;
+	&__body-label {
+		@include flex(space-between);
+	}
+	&__label {
+		border: 2.5px solid #fff;
+		font-size: .75rem;
+		width: 100%;
+		height: 45px;
+		&_textarea {
+			height: 165px;
+		}
+	}
+	&__input {
+		background-color: transparent;
+		width: 100%;
+		height: 100%;
+		padding: 10px 20px;
+		&:focus {
+			outline: 2.5px solid #f6ae48;
+		}
+		&::placeholder {
+			color: #fff;
+		}
+	}
+}

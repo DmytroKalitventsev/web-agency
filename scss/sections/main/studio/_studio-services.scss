@@ -37,13 +37,13 @@
 		}
 	}
 	&__title {
-		font-size: 0.85rem;
+		font-size: .85rem;
 		margin-bottom: 10px;
 		font-weight: bold;
 	}
 	&__descr {
 		line-height: 24px;
-		font-size: 0.6rem;
+		font-size: .6rem;
 	}
 
 	@media (max-width: $bp2) {
@@ -82,7 +82,7 @@
 		}
 		&__descr {
 			line-height: 20px;
-			font-size: 0.75rem;
+			font-size: .75rem;
 		}
 	}
 }

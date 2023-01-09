@@ -1,30 +1,3 @@
-.projects-customer {
-	position: relative;
-	&__img {
-		max-width: 100%;
-		height: 100%;
-	}
-	&__content {
-		@include flex(center, center, column);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #f6ae48cc;
-		border: 10px solid #fff;
-		line-height: 1;
-		font-weight: bold;
-	}
-	&__title {
-		font-size: 3rem;
-		letter-spacing: 4px;
-	}
-	&__descr {
-		font-size: 1.25rem;
-		letter-spacing: 2px;
-	}
-}
 .projects {
 	color: #fff;
 	& .background-text {
@@ -44,14 +17,12 @@
 		position: relative;
 	}
 	&__body-title {
-		
 	}
 	&__title {
 		font-size: 1.5rem;
 	}
 
 	&__content {
-		
 	}
 	&__column {
 		@include flex;
@@ -67,7 +38,6 @@
 		}
 	}
 	&__picture {
-		
 	}
 	&__img {
 		max-width: 100%;
@@ -80,18 +50,43 @@
 		min-height: 120px;
 	}
 	&__button {
-		display: inline-block;
 		background-color: #ffffff40;
-		border-radius: 15px;
-		text-align: center;
-		font-weight: bold;
-		font-size: 1rem;
-		line-height: 1;
 		padding: 21px 34px;
-		transition: background-color 0.2s;
 		&:hover {
 			background-color: #ffffff20;
 		}
+	}
+}
+.projects-customer {
+	position: relative;
+	&__img {
+		max-width: 100%;
+		height: 100%;
+	}
+	&__content {
+		@include flex(center, center, column);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #f6ae48cc;
+		border: 10px solid #fff;
+		transition: transform .4s;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+	&__title {
+		font-size: 3rem;
+		letter-spacing: 4px;
+		line-height: 1;
+		font-weight: bold;
+	}
+	&__descr {
+		font-size: 1.25rem;
+		letter-spacing: 2px;
+		line-height: 1;
 	}
 }
 

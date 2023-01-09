@@ -1,21 +1,19 @@
 .adaptate {
 	padding-top: 210px;
 	padding-bottom: 160px;
+	position: relative;
 	&__container {
 		@include flex(flex-start, flex-start);
-		column-gap: 100px;
-		position: relative;
 	}
 	&__devices {
-		position: relative;
-		top: 0%;
-		right: 0%;
-		@include flex;
+		position: absolute;
+		    top: 26.5%;
+    right: 40%;
 	}
 	&__device {
 		position: absolute;
 		&_iphone {
-			top: 175px;
+			top: 176px;
 			left: -48px;
 			.adaptate__img {
 				&:last-child {
@@ -27,7 +25,7 @@
 			}
 		}
 		&_ipad {
-			top: 58px;
+			top: 59px;
 			left: 123px;
 			.adaptate__img {
 				&:last-child {
