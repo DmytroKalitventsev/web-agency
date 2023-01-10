@@ -7,5 +7,23 @@ $bp3: 767.98px;
 $bp4: 576px;
 $bp5: 430px;
 
-// section "developments"
-$serviceBgOverlapping: linear-gradient(85deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
+// overlay for sections
+$sectionsBgOverlay: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%);
+
+// block "developments-price"
+$serviceBgOverlay: linear-gradient(85deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
+
+// additional color of text site
+$addColorText: #fff;
+
+// additional color of elements
+$addColorElements: #f6ae48;
+
+// color of icons
+$colorIcons: #00b9e7;
+
+// color of achivment-block
+$colorAchivmentBlock: #fff;
+
+// color of hover studio-service
+$colorHoverstudioBlock: #fff;

@@ -1,24 +1,22 @@
 .credo {
 	background: silver;
-	background-image: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%),
-		url(../img/credo-bg.webp);
+	background-image: $sectionsBgOverlay, url(../img/credo-bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
 	padding-top: 120px;
 	padding-bottom: 155px;
+	color: $addColorText;
 	&__container {
 		@include flex(center, center, column);
 		max-width: 1005px;
 	}
 	&__title {
 		text-align: center;
-		color: #fff;
 		margin-bottom: 55px;
 	}
 	&__descr {
 		text-align: center;
-		color: white;
 		line-height: 1.5;
 	}
 }

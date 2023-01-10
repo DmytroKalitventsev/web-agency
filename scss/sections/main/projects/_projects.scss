@@ -1,5 +1,5 @@
 .projects {
-	color: #fff;
+	color: $addColorText;
 	& .background-text {
 		@include flex;
 		width: 100%;
@@ -48,9 +48,8 @@
 		background-color: #303263;
 		min-height: 120px;
 	}
-	&__button {
+	& .button {
 		background-color: #ffffff40;
-		padding: 21px 34px;
 		&:hover {
 			background-color: #ffffff20;
 		}
@@ -71,7 +70,7 @@
 		height: 100%;
 		background-color: #f6ae48cc;
 		border: 10px solid #fff;
-		transition: transform .4s;
+		transition: transform 0.4s;
 		&:hover {
 			transform: scale(1.05);
 		}

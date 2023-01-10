@@ -1,0 +1,30 @@
+@media (max-width: $bp3) {
+	.advantages__title {
+		margin-bottom: 30px;
+	}
+	.advantages-items {
+		@include flex(center, flex-start, column);
+	}
+	.advantages-item {
+		margin-bottom: 35px;
+	}
+	.advantages-item__body-title {
+		flex: 0 0 auto;
+	}
+	.advantages-item__icon {
+		height: 50px;
+		width: 40px;
+	}
+}
+
+@media (max-width: $bp4) {
+	.advantages__title {
+		margin-bottom: 15px;
+	}
+	.advantages-item {
+		margin-bottom: 25px;
+	}
+	.advantages-item__body-title {
+		margin-bottom: 0;
+	}
+}

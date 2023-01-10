@@ -15,10 +15,10 @@
 	transition: background-color 0.5s;
 	cursor: pointer;
 	&:hover {
-		background-color: #f6ae48;
-		color: #fff;
+		background-color: $addColorElements;
+		color: $colorHoverstudioBlock;
 		& .studio-service__icon {
-			color: #fff;
+			color: $colorHoverstudioBlock;
 		}
 		& .price-button {
 			display: flex;
@@ -29,7 +29,7 @@
 		@include flex(center, flex-start, column);
 	}
 	&__icon {
-		color: #00b9e7;
+		color: $colorIcons;
 		margin-bottom: 12px;
 		max-height: 50px;
 		max-width: 30px;
@@ -48,14 +48,18 @@
 		font-size: 0.6rem;
 		line-height: 1.7;
 	}
+	& .price-button {
+		display: none;
+	}
 
 	@media (max-width: $bp3) {
 		@include flex(flex-start);
 		flex-wrap: wrap;
-		margin-bottom: 30px;
 		padding: 10px 15px;
+		margin-bottom: 20px;
 		&__body-title {
 			@include flex;
+			margin-bottom: 5px;
 		}
 		&__icon {
 			margin-right: 20px;
@@ -71,18 +75,7 @@
 			margin-bottom: 0;
 		}
 	}
-
 	@media (max-width: $bp4) {
-		margin-bottom: 15px;
-	}
-
-	@media (max-width: $bp5) {
-		&__title {
-			line-height: 2.4;
-		}
-		&__descr {
-			line-height: 1.6;
-			font-size: 0.75rem;
-		}
+		margin-bottom: 10px;
 	}
 }

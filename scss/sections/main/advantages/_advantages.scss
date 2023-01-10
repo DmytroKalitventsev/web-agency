@@ -1,11 +1,10 @@
 .advantages {
 	background: silver;
-	background-image: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%),
-		url(../img/advantages-bg.webp);
+	background-image: $sectionsBgOverlay, url(../img/advantages-bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
-	color: #fff;
+	color: $addColorText;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	&__content {
@@ -14,25 +13,21 @@
 	&__title {
 		margin-bottom: 70px;
 	}
-	&__button {
-		background-color: #f6ae48;
-		padding: 20px 38px;
-		&:hover {
-			background-color: #ff9500;
-		}
-	}
 }
 .advantages-items {
 	@include flex(center, flex-start);
 	column-gap: 3.5%;
+	max-width: 1360px;
+	padding: 0 15px;
 }
 .advantages-item {
 	@include flex(center, flex-start, column);
 	flex-wrap: wrap;
+	margin-bottom: 45px;
 	&__icon {
 		width: 65px;
 		height: 55px;
-		color: #00b9e7;
+		color: $colorIcons;
 	}
 	&__body-title {
 		@include flex;
@@ -40,12 +35,9 @@
 		column-gap: 15px;
 		margin-bottom: 10px;
 	}
-	&__title {
-	}
 	&__descr {
 		font-size: 0.75rem;
 		line-height: 1.6;
-		margin-bottom: 45px;
 	}
 }
 

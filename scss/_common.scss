@@ -43,7 +43,6 @@ body {
 	text-align: left;
 	&_h1 {
 		text-align: center;
-		color: white;
 		line-height: 1.5;
 	}
 	&_h2 {
@@ -54,15 +53,24 @@ body {
 	}
 	@media (max-width: $bp3) {
 		letter-spacing: 1px;
+		&_h2 {
+			font-size: 1.25rem;
+		}
 	}
 	@media (max-width: $bp5) {
 		font-size: 1.5rem;
+		&_h2 {
+			font-size: 1.2rem;
+		}
+		&_h3 {
+			font-size: 1.1rem;
+		}
 	}
 }
 
 .background-text {
 	position: absolute;
-	top: -37%;
+	top: -35%;
 	left: -9%;
 	z-index: 1;
 	font-family: tahoma;
@@ -75,15 +83,15 @@ body {
 	color: #00000033;
 	@media (max-width: $bp1) {
 		font-size: 2.7rem;
-		top: -29%;
 	}
 	@media (max-width: $bp3) {
 		left: -2%;
-		top: -17%;
+		top: -30%;
 		font-size: 2.3rem;
 	}
 	@media (max-width: $bp5) {
 		letter-spacing: 3px;
+		left: -5%;
 	}
 }
 
@@ -156,8 +164,23 @@ body {
 	text-align: center;
 	line-height: 1;
 	font-weight: bold;
+	color: #fff;
+	padding: 21px 34px;
 	white-space: nowrap;
 	font-size: 1rem;
 	border-radius: 15px;
 	transition: background-color 0.2s;
+	background-color: $addColorElements;
+	&:hover {
+		background-color: #ff9500;
+	}
+	@media (max-width: $bp1) {
+		padding: 17px 27px;
+	}
+	@media (max-width: $bp3) {
+		padding: 14px 23px;
+	}
+	@media (max-width: $bp5) {
+		padding: 13px 15px;
+	}
 }

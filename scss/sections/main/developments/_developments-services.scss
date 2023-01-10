@@ -2,7 +2,7 @@
 	width: 666px;
 	height: 526px;
 	padding: 125px 130px;
-	background-color: #f6ae48;
+	background-color: $addColorElements;
 	position: absolute;
 	top: -252px;
 	left: -116px;
@@ -117,7 +117,7 @@
 	padding: 60px 38px 35px 28px;
 	cursor: pointer;
 	&:nth-child(1) {
-		background-image: $serviceBgOverlapping, url(../img/developments/services-bg1.webp);
+		background-image: $serviceBgOverlay, url(../img/developments/services-bg1.webp);
 		&:hover {
 			& .price-button__button-price {
 				border-color: #00b9e7;
@@ -128,7 +128,7 @@
 		}
 	}
 	&:nth-child(2) {
-		background-image: $serviceBgOverlapping, url(../img/developments/services-bg2.webp);
+		background-image: $serviceBgOverlay, url(../img/developments/services-bg2.webp);
 		&:hover {
 			& .price-button__button-price {
 				border-color: #ffcb00;
@@ -139,7 +139,7 @@
 		}
 	}
 	&:nth-child(3) {
-		background-image: $serviceBgOverlapping, url(../img/developments/services-bg3.webp);
+		background-image: $serviceBgOverlay, url(../img/developments/services-bg3.webp);
 		&:hover {
 			& .price-button__button-price {
 				border-color: #66bf0d;

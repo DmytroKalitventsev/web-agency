@@ -1,12 +1,12 @@
 .hero {
 	background: silver;
-	background-image: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%),
-		url(../img/hero-bg.webp);
+	background-image: $sectionsBgOverlay, url(../img/hero-bg.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
 	padding-top: 190px;
 	padding-bottom: 120px;
+	color: $addColorText;
 	&__container {
 		@include flex(center, center, column);
 	}
@@ -20,7 +20,6 @@
 	}
 	&__descr {
 		text-align: center;
-		color: white;
 		line-height: 1.5;
 		max-width: 835px;
 	}
