@@ -270,7 +270,7 @@ body {
   line-height: 2;
   max-width: 577px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 950px) {
   .content {
     margin-left: 0;
   }
@@ -1335,9 +1335,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 .developments__img {
-  max-width: 200px;
+  width: 100%;
 }
 
 .developments-title {
@@ -1630,8 +1633,6 @@ body {
     padding-top: 110px;
     padding-bottom: 80px;
   }
-}
-@media (max-width: 767.98px) {
   .developments__promotion {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1650,6 +1651,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
+    gap: 10%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
   .developments__img {
     max-width: 150px;
@@ -2070,9 +2076,67 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 5%;
-     -moz-column-gap: 5%;
-          column-gap: 5%;
+  -webkit-column-gap: 4.5%;
+     -moz-column-gap: 4.5%;
+          column-gap: 4.5%;
+}
+.support__picture {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 563px;
+          flex: 0 1 563px;
+}
+.support__img {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .support {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .support__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .support__picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+  }
+  .support__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 440px;
+            flex: 0 1 440px;
+  }
+}
+@media (max-width: 576px) {
+  .support {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .support__picture {
+    margin-top: 20px;
+  }
 }
 .contacts {
   background: silver;

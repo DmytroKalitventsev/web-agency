@@ -3,10 +3,14 @@
 	padding-bottom: 230px;
 	&__container {
 		@include flex(flex-start, center);
-		column-gap: 5%;
+		column-gap: 4.5%;
+	}
+	&__picture {
+		flex: 0 1 563px;
 	}
 	&__img {
-		&-item {
-		}
+		width: 100%;
 	}
 }
+
+@import "./support-media";

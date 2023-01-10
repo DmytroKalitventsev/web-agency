@@ -2,23 +2,23 @@
 	.developments {
 		padding-top: 110px;
 		padding-bottom: 80px;
-	}
-}
-
-@media (max-width: $bp3) {
-	.developments__promotion {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.developments__content {
-		margin-left: 0;
-	}
-	.developments__partners {
-		margin-top: 30px;
-		flex-direction: row;
-	}
-	.developments__img {
-		max-width: 150px;
+		&__promotion {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__content {
+			margin-left: 0;
+		}
+		&__partners {
+			margin-top: 30px;
+			flex-direction: row;
+			width: 100%;
+			gap: 10%;
+			flex: 0 0 auto;
+		}
+		&__img {
+			max-width: 150px;
+		}
 	}
 }
 
