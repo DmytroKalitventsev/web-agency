@@ -24,11 +24,11 @@
 		flex-wrap: wrap;
 		column-gap: 40px;
 		font-size: 1.1rem;
-		line-height: 30px;
+		line-height: 1.2;
+		letter-spacing: 2px;
 		white-space: nowrap;
 	}
 	&__link {
-		display: block;
 		padding: 15px 0;
 		transition: color 0.2s;
 		&:hover {

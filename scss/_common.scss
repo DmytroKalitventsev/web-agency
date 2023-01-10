@@ -3,6 +3,15 @@
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: 1px;
 	color: #000;
+	@media (max-width: $bp1) {
+		font-size: 20px;
+	}
+	@media (max-width: $bp3) {
+		font-size: 16px;
+		.animate {
+			animation: none !important;
+		}
+	}
 }
 
 body {
@@ -29,20 +38,31 @@ body {
 .title {
 	font-weight: bold;
 	font-size: 2rem;
-	text-align: center;
+	letter-spacing: 2px;
+	line-height: 1.25;
+	text-align: left;
 	&_h1 {
+		text-align: center;
 		color: white;
-		line-height: 72px;
+		line-height: 1.5;
 	}
 	&_h2 {
-		text-align: left;
-		line-height: 58px;
+		font-size: 1.5rem;
+	}
+	&_h3 {
+		font-size: 1.25rem;
+	}
+	@media (max-width: $bp3) {
+		letter-spacing: 1px;
+	}
+	@media (max-width: $bp5) {
+		font-size: 1.5rem;
 	}
 }
 
 .background-text {
 	position: absolute;
-	top: 2%;
+	top: -37%;
 	left: -9%;
 	z-index: 1;
 	font-family: tahoma;
@@ -51,11 +71,11 @@ body {
 	font-size: 3rem;
 	white-space: nowrap;
 	text-transform: uppercase;
-	line-height: 60px;
+	line-height: 1;
 	color: #00000033;
 	@media (max-width: $bp1) {
 		font-size: 2.7rem;
-		top: -4%;
+		top: -29%;
 	}
 	@media (max-width: $bp3) {
 		left: -2%;
@@ -75,10 +95,10 @@ body {
 		display: inline-block;
 		text-align: center;
 		font-size: 0.74rem;
-		line-height: 21px;
+		line-height: 1;
 		color: #fff;
 		border: 2px solid #fff;
-		padding: 6px 12px;
+		padding: 8px 12px;
 		transition: border-color 0.2s, transform 0.4s;
 		&:hover {
 			transform: scale(1.05);
@@ -111,15 +131,13 @@ body {
 		z-index: 2;
 	}
 	&__title {
-		text-align: left;
-		font-size: 1.5rem;
-		line-height: 2;
-		font-weight: bold;
-		margin-bottom: 10px;
+		margin-bottom: 15px;
+		position: relative;
+		z-index: 2;
 	}
 	&__descr {
 		line-height: 2;
-		max-width: 570px;
+		max-width: 577px;
 	}
 	@media (max-width: $bp3) {
 		margin-left: 0;
@@ -143,5 +161,3 @@ body {
 	border-radius: 15px;
 	transition: background-color 0.2s;
 }
-
-@import "./media";

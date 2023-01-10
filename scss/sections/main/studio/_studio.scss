@@ -17,9 +17,11 @@
 		z-index: 2;
 	}
 	&__descr {
+		position: relative;
+		z-index: 2;
 		margin-right: 70px;
 		font-size: .85rem;
-		line-height: 28px;
+		line-height: 1.4;
 		max-width: 760px;
 	}
 	& .background-text {
@@ -31,7 +33,6 @@
 		color: #c1c1c133;
 		font-size: 16rem;
 		letter-spacing: 17px;
-		line-height: 310px;
 	}
 }
 

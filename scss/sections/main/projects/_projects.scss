@@ -16,12 +16,11 @@
 		min-height: 120px;
 		position: relative;
 	}
-	&__body-title {
-	}
 	&__title {
+		position: relative;
+		z-index: 2;
 		font-size: 1.5rem;
 	}
-
 	&__content {
 	}
 	&__column {

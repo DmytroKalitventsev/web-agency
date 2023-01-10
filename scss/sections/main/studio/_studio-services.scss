@@ -25,6 +25,9 @@
 			margin-top: 15px;
 		}
 	}
+	&__body-title {
+		@include flex(center, flex-start, column);
+	}
 	&__icon {
 		color: #00b9e7;
 		margin-bottom: 12px;
@@ -37,19 +40,13 @@
 		}
 	}
 	&__title {
-		font-size: .85rem;
+		font-size: 0.85rem;
 		margin-bottom: 10px;
 		font-weight: bold;
 	}
 	&__descr {
-		line-height: 24px;
-		font-size: .6rem;
-	}
-
-	@media (max-width: $bp2) {
-		&__descr {
-			line-height: 20px;
-		}
+		font-size: 0.6rem;
+		line-height: 1.7;
 	}
 
 	@media (max-width: $bp3) {
@@ -57,6 +54,9 @@
 		flex-wrap: wrap;
 		margin-bottom: 30px;
 		padding: 10px 15px;
+		&__body-title {
+			@include flex;
+		}
 		&__icon {
 			margin-right: 20px;
 			margin-bottom: 0;
@@ -78,11 +78,11 @@
 
 	@media (max-width: $bp5) {
 		&__title {
-			line-height: 32px;
+			line-height: 2.4;
 		}
 		&__descr {
-			line-height: 20px;
-			font-size: .75rem;
+			line-height: 1.6;
+			font-size: 0.75rem;
 		}
 	}
 }

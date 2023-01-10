@@ -3,7 +3,7 @@
 	padding-bottom: 230px;
 	&__container {
 		@include flex(flex-start, center);
-		column-gap: 4%;
+		column-gap: 5%;
 	}
 	&__img {
 		&-item {
