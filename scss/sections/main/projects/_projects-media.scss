@@ -1,4 +1,4 @@
-@media (max-width: $bp1) {
+@media (max-width: $bp2) {
 	.projects {
 		& .background-text {
 			letter-spacing: 3px;
@@ -14,7 +14,7 @@
 	}
 }
 
-@media (max-width: $bp3) {
+@media (max-width: $bp4) {
 	.projects__heared {
 		min-height: 80px;
 	}
@@ -23,7 +23,7 @@
 	}
 }
 
-@media (max-width: $bp5) {
+@media (max-width: $bp6) {
 	.projects {
 		& .background-text {
 			letter-spacing: 2px;

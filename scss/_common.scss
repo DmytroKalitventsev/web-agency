@@ -3,10 +3,10 @@
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: 1px;
 	color: #000;
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
 		font-size: 20px;
 	}
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		font-size: 16px;
 		.animate {
 			animation: none !important;
@@ -51,13 +51,13 @@ body {
 	&_h3 {
 		font-size: 1.25rem;
 	}
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		letter-spacing: 1px;
 		&_h2 {
 			font-size: 1.25rem;
 		}
 	}
-	@media (max-width: $bp5) {
+	@media (max-width: $bp6) {
 		font-size: 1.5rem;
 		&_h2 {
 			font-size: 1.2rem;
@@ -81,15 +81,16 @@ body {
 	text-transform: uppercase;
 	line-height: 1;
 	color: #00000033;
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
+		left: -2%;
+		top: -27%;
 		font-size: 2.7rem;
 	}
-	@media (max-width: $bp3) {
-		left: -2%;
-		top: -30%;
+	@media (max-width: $bp4) {
+		top: -33%;
 		font-size: 2.3rem;
 	}
-	@media (max-width: $bp5) {
+	@media (max-width: $bp6) {
 		letter-spacing: 3px;
 		left: -5%;
 	}
@@ -111,7 +112,7 @@ body {
 		&:hover {
 			transform: scale(1.05);
 		}
-		@media (max-width: $bp5) {
+		@media (max-width: $bp6) {
 			min-width: 100px;
 		}
 	}
@@ -147,7 +148,7 @@ body {
 		line-height: 2;
 		max-width: 577px;
 	}
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
 		margin-left: 0;
 		&__title {
 			margin-bottom: 0;
@@ -174,13 +175,13 @@ body {
 	&:hover {
 		background-color: #ff9500;
 	}
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
 		padding: 17px 27px;
 	}
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		padding: 14px 23px;
 	}
-	@media (max-width: $bp5) {
+	@media (max-width: $bp6) {
 		padding: 13px 15px;
 	}
 }

@@ -1,4 +1,4 @@
-@media (max-width: $bp1) {
+@media (max-width: $bp2) {
 	.studio__title {
 		flex: 0 0 160px;
 	}
@@ -7,7 +7,7 @@
 	}
 }
 
-@media (max-width: $bp3) {
+@media (max-width: $bp4) {
 	.studio {
 		padding-top: 60px;
 		padding-bottom: 80px;
@@ -30,13 +30,13 @@
 	}
 }
 
-@media (max-width: $bp4) {
+@media (max-width: $bp5) {
 	.studio__content {
 		margin-bottom: 50px;
 	}
 }
 
-@media (max-width: $bp5) {
+@media (max-width: $bp6) {
 	.studio {
 		padding-top: 30px;
 		padding-bottom: 30px;

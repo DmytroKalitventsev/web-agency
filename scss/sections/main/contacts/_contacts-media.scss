@@ -1,0 +1,71 @@
+@media (max-width: $bp2) {
+	.contacts {
+		padding-top: 80px;
+		padding-bottom: 80px;
+		&__title {
+			margin-bottom: 25px;
+		}
+	}
+	.contacts-user {
+		&__body-info {
+			column-gap: 39px;
+		}
+		&__info {
+			font-size: 0.6rem;
+		}
+	}
+}
+
+@media (max-width: $bp4) {
+	.contacts {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__container {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__content {
+			margin-left: 0;
+		}
+		&__title {
+			margin-bottom: 10px;
+		}
+		&__descr {
+			max-width: initial;
+			font-size: 0.85rem;
+		}
+	}
+	.contacts-user {
+		margin-top: 40px;
+		width: 100%;
+		flex: 0 0 auto;
+		&__info {
+			font-size: 0.7rem;
+		}
+	}
+	.contacts-form {
+		flex: 0 0 auto;
+		&__label {
+			font-size: 0.85rem;
+		}
+	}
+}
+
+@media (max-width: $bp5) {
+	.contacts {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.contacts-user {
+		margin-top: 25px;
+	}
+	.contacts-form__label_textarea {
+		height: 135px;
+	}
+}
+
+@media (max-width: $bp6) {
+	.contacts-form__body-label {
+		@include flex(center, center, column);
+	}
+}

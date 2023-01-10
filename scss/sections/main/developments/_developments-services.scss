@@ -48,20 +48,20 @@
 		}
 	}
 
-	@media (max-width: $bpF) {
+	@media (max-width: $bp0) {
 		width: 600px;
 		height: 460px;
 	}
 
-	@media (max-width: $bp0) {
+	@media (max-width: $bp1) {
 		height: 400px;
 	}
 
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
 		width: 500px;
 	}
 
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		padding: 60px 130px;
 		top: -150px;
 		&:hover &__icon-item {
@@ -69,11 +69,11 @@
 		}
 	}
 
-	@media (max-width: $bp4) {
+	@media (max-width: $bp5) {
 		width: 450px;
 	}
 
-	@media (max-width: $bp5) {
+	@media (max-width: $bp6) {
 		top: -120px;
 		height: 320px;
 		width: 350px;
@@ -83,15 +83,15 @@
 .developments-services {
 	margin-bottom: 175px;
 
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
 		margin-bottom: 120px;
 	}
 
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		margin-bottom: 60px;
 	}
 
-	@media (max-width: $bp4) {
+	@media (max-width: $bp5) {
 		margin-bottom: 40px;
 	}
 }
@@ -102,7 +102,7 @@
 	padding: 0px 10px 0px 10px;
 	position: relative;
 	z-index: 2;
-	@media (max-width: $bp4) {
+	@media (max-width: $bp5) {
 		padding: 0;
 	}
 }
@@ -167,7 +167,7 @@
 		height: 33px;
 	}
 
-	@media (max-width: $bpF) {
+	@media (max-width: $bp0) {
 		padding: 40px 25px 25px 25px;
 		width: 310px;
 		height: 280px;
@@ -181,7 +181,7 @@
 		}
 	}
 
-	@media (max-width: $bp0) {
+	@media (max-width: $bp1) {
 		width: 280px;
 		height: 250px;
 		& .price-button__icon {
@@ -190,7 +190,7 @@
 		}
 	}
 
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
 		padding: 30px 20px 20px 20px;
 		width: 250px;
 		height: 220px;
@@ -200,7 +200,7 @@
 		}
 	}
 
-	@media (max-width: $bp2) {
+	@media (max-width: $bp3) {
 		width: 220px;
 		height: 220px;
 		& .price-button__button-price {
@@ -208,7 +208,7 @@
 		}
 	}
 
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		flex: 1 1 48%;
 		&:first-child {
 			flex: 1 1 84%;
@@ -218,7 +218,7 @@
 		}
 	}
 
-	@media (max-width: $bp4) {
+	@media (max-width: $bp5) {
 		padding: 20px 15px 15px 15px;
 		flex: 0 1 84%;
 		height: 160px;

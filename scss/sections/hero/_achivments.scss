@@ -5,12 +5,12 @@
 	width: 100%;
 	color: $addColorText;
 
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		gap: 30px;
 		padding: 0 10px;
 	}
 
-	@media (max-width: $bp4) {
+	@media (max-width: $bp5) {
 		gap: 20px;
 	}
 }
@@ -61,11 +61,11 @@
 		text-align: center;
 	}
 
-	@media (max-width: $bp1) {
+	@media (max-width: $bp2) {
 		width: 200px;
 	}
 
-	@media (max-width: $bp3) {
+	@media (max-width: $bp4) {
 		flex: 1 1 47%;
 		height: 130px;
 		&:first-child {
@@ -83,7 +83,7 @@
 		}
 	}
 
-	@media (max-width: $bp4) {
+	@media (max-width: $bp5) {
 		flex: 0 1 80%;
 		border-top: 2px solid $colorAchivmentBlock;
 		border-left: none;

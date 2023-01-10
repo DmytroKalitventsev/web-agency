@@ -31,7 +31,7 @@
 		margin-top: 15px;
 	}
 	&__info {
-		font-size: 0.55rem;
+		font-size: .55rem;
 		line-height: 1.7;
 	}
 	& .button {
@@ -41,7 +41,7 @@
 }
 .contacts-form {
 	@include flex(center, stretch, column);
-	max-width: 615px;
+	flex: 0 0 615px;
 	border: 2.5px solid #fff;
 	&__body-label {
 		@include flex(space-between);
@@ -50,7 +50,6 @@
 		border: 2.5px solid #fff;
 		font-size: 0.75rem;
 		width: 100%;
-		height: 50px;
 		&_textarea {
 			height: 165px;
 		}
@@ -59,7 +58,7 @@
 		background-color: transparent;
 		width: 100%;
 		height: 100%;
-		padding: 10px 20px;
+		padding: 12px 20px;
 		&:focus {
 			outline: 2.5px solid $addColorElements;
 		}
@@ -68,3 +67,5 @@
 		}
 	}
 }
+
+@import "./contacts-media";
