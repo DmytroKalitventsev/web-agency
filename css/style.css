@@ -2021,9 +2021,9 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 75px;
           flex: 1 0 75px;
-  -webkit-column-gap: 15px;
-     -moz-column-gap: 15px;
-          column-gap: 15px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
   margin-bottom: 10px;
 }
 .advantages-item__descr {
