@@ -1,7 +1,7 @@
 @media (max-width: $bp2) {
 	.support {
-		padding-top: 80px;
-		padding-bottom: 80px;
+		padding-top: $bp2PaddingTop;
+		padding-bottom: $bp2PaddingBottom;
 		&__container {
 			flex-direction: column;
 			align-items: flex-start;
@@ -18,10 +18,17 @@
 	}
 }
 
+@media (max-width: $bp4) {
+	.support {
+		padding-top: $bp4PaddingTop;
+		padding-bottom: $bp4PaddingBottom;
+	}
+}
+
 @media (max-width: $bp5) {
 	.support {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: $bp5PaddingTop;
+		padding-bottom: $bp5PaddingBottom;
 		&__picture {
 			margin-top: 20px;
 		}

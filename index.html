@@ -274,32 +274,24 @@
 						OUR PROJECTS
 					</span>
 				</div>
-				<div class="projects__content">
-					<div class="projects__column projects__column_b">
-						<div class="projects__picture">
-							<img class="projects__img" src="./img/projects/proj1.png" alt="#">
-						</div>
-						<div class="projects__picture">
-							<img class="projects__img" src="./img/projects/proj2.png" alt="#">
-						</div>
+				<div class="projects__works">
+					<div class="projects__work">
+						<img class="projects__img" src="./img/projects/proj1.png" alt="#">
 					</div>
-					<div class="projects__column">
-						<div class="projects__picture">
-							<img class="projects__img" src="./img/projects/proj3.png" alt="#">
-						</div>
-						<a class="projects__picture projects-customer" href="#" target="_blank">
-							<img class="projects-customer__img" src="./img/projects/proj4.png" alt="#">
-							<div class="projects-customer__content">
-								<h2 class="projects-customer__title">РКБ</h2>
-								<p class="projects-customer__descr">автосервис</p>
-							</div>
-						</a>
-						<div class="projects__picture">
-							<img class="projects__img" src="./img/projects/proj5.png" alt="#">
-						</div>
-						<div class="projects__picture">
-							<img class="projects__img" src="./img/projects/proj6.png" alt="#">
-						</div>
+					<div class="projects__work">
+						<img class="projects__img" src="./img/projects/proj2.png" alt="#">
+					</div>
+					<div class="projects__work">
+						<img class="projects__img" src="./img/projects/proj3.png" alt="#">
+					</div>
+					<div class="projects__work">
+						<img class="projects__img" src="./img/projects/proj4.png" alt="#">
+					</div>
+					<div class="projects__work">
+						<img class="projects__img" src="./img/projects/proj5.png" alt="#">
+					</div>
+					<div class="projects__work">
+						<img class="projects__img" src="./img/projects/proj6.png" alt="#">
 					</div>
 				</div>
 				<div class="projects__footer">
@@ -326,15 +318,18 @@
 						</p>
 					</div>
 					<div class="adaptate__devices">
-						<div class="adaptate__device adaptate__device_iphone wow animate animate_fadeInRightBig" data-wow-delay=".1s">
+						<div class="adaptate__device adaptate__device_iphone wow animate animate_fadeInRightBig"
+							data-wow-delay=".1s">
 							<img class="adaptate__img" src="./img/adaptate/iphone.png" alt="#">
 							<img class="adaptate__img" src="./img/adaptate/iphone-screen.png" alt="#">
 						</div>
-						<div class="adaptate__device adaptate__device_ipad wow animate animate_fadeInRightBig" data-wow-delay=".2s">
+						<div class="adaptate__device adaptate__device_ipad wow animate animate_fadeInRightBig"
+							data-wow-delay=".2s">
 							<img class="adaptate__img" src="./img/adaptate/ipad.png" alt="#">
 							<img class="adaptate__img" src="./img/adaptate/ipad-screen.png" alt="#">
 						</div>
-						<div class="adaptate__device adaptate__device_macbook wow animate animate_fadeInRightBig" data-wow-delay=".3s">
+						<div class="adaptate__device adaptate__device_macbook wow animate animate_fadeInRightBig"
+							data-wow-delay=".3s">
 							<img class="adaptate__img" src="./img/adaptate/macbook.png" alt="#">
 							<img class="adaptate__img" src="./img/adaptate/macbook-screen.png" alt="#">
 						</div>
@@ -410,7 +405,7 @@
 			<section class="support">
 				<div class="support__container">
 					<div class="support__content content">
-						<div class="content__body-title">
+						<div class="content__title-wrap">
 							<h2 class="content__title title title_h2">ЗАБОТА О КАЖДОМ</h2>
 							<span class="background-text wow animate animate_jackInTheBox" data-wow-delay="1s">
 								BE CAREFUL
@@ -443,37 +438,38 @@
 							в зависимости от поставленных задач.
 						</p>
 					</div>
-					<div class="contacts-user  wow animate animate_fadeInRightBig">
-						<form class="contacts-form" action="#">
-							<div class="contacts-form__body-label">
-								<label class="contacts-form__label">
-									<input class="contacts-form__input" type="text" name="name" placeholder="Ваше имя">
-								</label>
-								<label class="contacts-form__label">
-									<input class="contacts-form__input" type="text" name="surname"
-										placeholder="Ваша фамилия">
-								</label>
-							</div>
-							<label class="contacts-form__label">
-								<input class="contacts-form__input" type="email" name="email" placeholder="E-mail">
-							</label>
-							<label class="contacts-form__label contacts-form__label_textarea">
-								<textarea class="contacts-form__input" name="message"
-									placeholder="Введите ваше сообщение"></textarea>
-							</label>
-						</form>
-						<div class="contacts-user__body-info">
-							<span class="contacts-user__info">
+					<form class="contacts-form wow animate animate_fadeInRightBig" action="#">
+						<label class="contacts-form__label">
+							<input class="contacts-form__input" type="text" name="name" placeholder="Ваше имя">
+						</label>
+						<label class="contacts-form__label">
+							<input class="contacts-form__input" type="text" name="surname" placeholder="Ваша фамилия">
+						</label>
+						<label class="contacts-form__label">
+							<input class="contacts-form__input" type="email" name="email" placeholder="E-mail">
+						</label>
+						<label class="contacts-form__label">
+							<textarea class="contacts-form__input" name="message"
+								placeholder="Введите ваше сообщение"></textarea>
+						</label>
+						<div class="contacts-form__send">
+							<span class="contacts-form__info">
 								Наши специалисты свяжутся с вами как можно скорее
 							</span>
-							<button class="contacts-user__button button" type="submit">ОТПРАВИТЬ</button>
+							<button class="contacts-form__button button" type="submit">ОТПРАВИТЬ</button>
 						</div>
-					</div>
+					</form>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__container"></div>
+			<div class="footer__container">
+				<a class="footer__start" href="#">
+					<svg class="footer__icon">
+						<use xlink:href="./img/svg/general.svg#arrow"></use>
+					</svg>
+				</a>
+			</div>
 		</footer>
 	</div>
 

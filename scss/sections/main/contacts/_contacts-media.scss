@@ -1,25 +1,7 @@
 @media (max-width: $bp2) {
 	.contacts {
-		padding-top: 80px;
-		padding-bottom: 80px;
-		&__title {
-			margin-bottom: 25px;
-		}
-	}
-	.contacts-user {
-		&__body-info {
-			column-gap: 39px;
-		}
-		&__info {
-			font-size: 0.6rem;
-		}
-	}
-}
-
-@media (max-width: $bp4) {
-	.contacts {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: $bp2PaddingTop;
+		padding-bottom: $bp2PaddingBottom;
 		&__container {
 			flex-direction: column;
 			align-items: flex-start;
@@ -33,14 +15,7 @@
 		&__descr {
 			max-width: initial;
 			font-size: 0.85rem;
-		}
-	}
-	.contacts-user {
-		margin-top: 40px;
-		width: 100%;
-		flex: 0 0 auto;
-		&__info {
-			font-size: 0.7rem;
+			margin-bottom: 40px;
 		}
 	}
 	.contacts-form {
@@ -48,24 +23,43 @@
 		&__label {
 			font-size: 0.85rem;
 		}
+		&__send {
+			column-gap: 7%;
+		}
+		&__info {
+			font-size: 0.65rem;
+		}
+		& .button {
+			font-size: 0.65rem;
+		}
+	}
+}
+
+@media (max-width: $bp4) {
+	.contacts {
+		padding-top: $bp4PaddingTop;
+		padding-bottom: $bp4PaddingBottom;
 	}
 }
 
 @media (max-width: $bp5) {
 	.contacts {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: $bp5PaddingTop;
+		padding-bottom: $bp5PaddingBottom;
+		&__descr {
+			margin-bottom: 20px;
+		}
 	}
-	.contacts-user {
-		margin-top: 25px;
-	}
-	.contacts-form__label_textarea {
-		height: 135px;
-	}
-}
-
-@media (max-width: $bp6) {
-	.contacts-form__body-label {
-		@include flex(center, center, column);
+	.contacts-form__label {
+		&:nth-child(-n + 2) {
+			width: 100%;
+		}
+		&:nth-child(2) {
+			border-top: none;
+			border-left: 5px solid #fff;
+		}
+		&:nth-child(4) {
+			height: 130px;
+		}
 	}
 }

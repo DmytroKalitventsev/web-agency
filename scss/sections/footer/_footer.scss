@@ -1,11 +1,25 @@
 .footer {
 	background-color: $addColorElements;
 	&__container {
+		@include flex;
 		min-height: 110px;
 	}
-	@media (max-width: $bp4) {
-		&__container {
-			min-height: 80px;
+	&__start {
+		@include flex;
+		width: 40px;
+		height: 40px;
+		border-radius: 10px;
+		cursor: pointer;
+		&:hover {
+			background-color: #30326345;
 		}
 	}
+	&__icon {
+		color: #fff;
+		width: 30px;
+		height: 30px;
+		transform: rotate(270deg);
+	}
 }
+
+@import "./footer-media";

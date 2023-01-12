@@ -7,6 +7,17 @@ $bp4: 767.98px;
 $bp5: 576px;
 $bp6: 430px;
 
+// padding tap and bottom of section
+	// padding tap and bottom on "max-width 950px"
+		$bp2PaddingTop: 80px;
+		$bp2PaddingBottom: 80px;
+	// padding tap and bottom on "max-width 767.98px"
+		$bp4PaddingTop: 60px;
+		$bp4PaddingBottom: 60px;
+	// padding tap and bottom on "max-width 576px"
+		$bp5PaddingTop: 50px;
+		$bp5PaddingBottom: 50px;
+
 // overlay for sections
 $sectionsBgOverlay: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%);
 

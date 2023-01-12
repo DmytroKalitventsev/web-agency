@@ -135,14 +135,14 @@ body {
 
 .content {
 	margin-left: 75px;
-	&__body-title {
-		position: relative;
-		z-index: 2;
-	}
 	&__title {
 		margin-bottom: 15px;
 		position: relative;
 		z-index: 2;
+		&-wrap {
+			position: relative;
+			z-index: 2;
+		}
 	}
 	&__descr {
 		line-height: 2;
@@ -169,7 +169,7 @@ body {
 	padding: 21px 34px;
 	white-space: nowrap;
 	font-size: 1rem;
-	border-radius: 15px;
+	border-radius: 10px;
 	transition: background-color 0.2s;
 	background-color: $addColorElements;
 	&:hover {
