@@ -5,4 +5,4 @@ function documentClick(e) {
 	if (targetItem.closest('.menu-button')) {
 		document.documentElement.classList.toggle('menu-open');
 	}
-}
+};

@@ -2,6 +2,9 @@
 	.header__container {
 		min-height: 80px;
 	}
+	.logo {
+		width: 50px;
+	}
 	.menu__list {
 		column-gap: 25px;
 		font-size: 1.1rem;
@@ -11,9 +14,6 @@
 @media (max-width: $bp4) {
 	.header__container {
 		min-height: 70px;
-	}
-	.logo__img {
-		max-height: 50px;
 	}
 	.menu {
 		position: fixed;

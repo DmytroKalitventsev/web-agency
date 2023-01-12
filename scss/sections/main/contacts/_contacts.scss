@@ -23,35 +23,27 @@
 		line-height: 1.5;
 	}
 }
-.contacts-user {
-	flex: 0 1 615px;
-	&__body-info {
-		@include flex(flex-end, flex-start);
-		column-gap: 60px;
-		margin-top: 15px;
-	}
-	&__info {
-		font-size: .55rem;
-		line-height: 1.7;
-	}
-	& .button {
-		padding: 15px 28px;
-		font-size: 0.6rem;
-	}
-}
 .contacts-form {
-	@include flex(center, stretch, column);
-	flex: 0 0 615px;
-	border: 2.5px solid #fff;
-	&__body-label {
-		@include flex(space-between);
-	}
+	@include flex;
+	flex-wrap: wrap;
+	flex: 0 1 615px;
 	&__label {
-		border: 2.5px solid #fff;
+		border: 5px solid #fff;
 		font-size: 0.75rem;
 		width: 100%;
-		&_textarea {
+		&:nth-child(-n + 2) {
+			width: calc(100% / 2);
+		}
+		&:nth-child(2) {
+			border-left: none;
+		}
+		&:nth-child(3) {
+			border-top: none;
+		}
+		&:nth-child(4) {
 			height: 165px;
+			border-top: none;
+			margin-bottom: 15px;
 		}
 	}
 	&__input {
@@ -65,6 +57,19 @@
 		&::placeholder {
 			color: #fff;
 		}
+	}
+	&__send {
+		@include flex(flex-end, flex-start);
+		column-gap: 10%;
+		width: 100%;
+	}
+	&__info {
+		font-size: 0.55rem;
+		line-height: 1.7;
+	}
+	& .button {
+		padding: 15px 28px;
+		font-size: 0.55rem;
 	}
 }
 

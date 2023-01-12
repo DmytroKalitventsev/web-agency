@@ -3,14 +3,16 @@
 	font-family: Arial, Helvetica, sans-serif;
 	letter-spacing: 1px;
 	color: #000;
+
 	@media (max-width: $bp2) {
 		font-size: 20px;
-	}
-	@media (max-width: $bp4) {
-		font-size: 16px;
 		.animate {
 			animation: none !important;
 		}
+	}
+
+	@media (max-width: $bp4) {
+		font-size: 16px;
 	}
 }
 
@@ -51,19 +53,40 @@ body {
 	&_h3 {
 		font-size: 1.25rem;
 	}
-	@media (max-width: $bp4) {
+
+	@media (max-width: $bp2) {
+		font-size: 1.8rem;
 		letter-spacing: 1px;
+		&_h1 {
+			line-height: 1.25;
+		}
 		&_h2 {
-			font-size: 1.25rem;
+			font-size: 1.4rem;
+		}
+		&_h3 {
+			font-size: 1.1rem;
 		}
 	}
+
+	@media (max-width: $bp4) {
+		&_h2 {
+			font-size: 1.3rem;
+		}
+	}
+
+	@media (max-width: $bp5) {
+		&_h1 {
+			font-size: 1.6rem;
+		}
+	}
+
 	@media (max-width: $bp6) {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		&_h2 {
 			font-size: 1.2rem;
 		}
 		&_h3 {
-			font-size: 1.1rem;
+			font-size: 1rem;
 		}
 	}
 }
@@ -81,18 +104,21 @@ body {
 	text-transform: uppercase;
 	line-height: 1;
 	color: #00000033;
+
 	@media (max-width: $bp2) {
+		top: -30%;
 		left: -2%;
-		top: -27%;
 		font-size: 2.7rem;
 	}
+
 	@media (max-width: $bp4) {
-		top: -33%;
 		font-size: 2.3rem;
 	}
+
 	@media (max-width: $bp6) {
 		letter-spacing: 3px;
-		left: -5%;
+		top: -35%;
+		left: -4%;
 	}
 }
 
@@ -112,6 +138,7 @@ body {
 		&:hover {
 			transform: scale(1.05);
 		}
+
 		@media (max-width: $bp6) {
 			min-width: 100px;
 		}
@@ -135,25 +162,27 @@ body {
 
 .content {
 	margin-left: 75px;
-	&__body-title {
-		position: relative;
-		z-index: 2;
-	}
 	&__title {
 		margin-bottom: 15px;
 		position: relative;
 		z-index: 2;
+		&-wrap {
+			position: relative;
+			z-index: 2;
+		}
 	}
 	&__descr {
 		line-height: 2;
 		max-width: 577px;
 	}
+
 	@media (max-width: $bp2) {
 		margin-left: 0;
 		&__title {
-			margin-bottom: 0;
+			margin-bottom: 6px;
 		}
 		&__descr {
+			line-height: 1.5;
 			font-size: 0.85rem;
 			max-width: initial;
 		}
@@ -169,18 +198,21 @@ body {
 	padding: 21px 34px;
 	white-space: nowrap;
 	font-size: 1rem;
-	border-radius: 15px;
+	border-radius: 10px;
 	transition: background-color 0.2s;
 	background-color: $addColorElements;
 	&:hover {
 		background-color: #ff9500;
 	}
+
 	@media (max-width: $bp2) {
 		padding: 17px 27px;
 	}
+
 	@media (max-width: $bp4) {
 		padding: 14px 23px;
 	}
+
 	@media (max-width: $bp6) {
 		padding: 13px 15px;
 	}

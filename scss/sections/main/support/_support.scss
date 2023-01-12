@@ -5,11 +5,11 @@
 		@include flex(flex-start, center);
 		column-gap: 4.5%;
 	}
-	&__picture {
-		flex: 0 1 563px;
-	}
 	&__img {
 		width: 100%;
+		&-wrap {
+			flex: 0 1 563px;
+		}
 	}
 }
 

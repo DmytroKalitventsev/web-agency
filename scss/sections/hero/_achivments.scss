@@ -7,7 +7,6 @@
 
 	@media (max-width: $bp4) {
 		gap: 30px;
-		padding: 0 10px;
 	}
 
 	@media (max-width: $bp5) {
@@ -19,16 +18,16 @@
 	padding: 20px;
 	width: 255px;
 	height: 160px;
-	border-left: 2px solid $colorAchivmentBlock;
-	border-right: 2px solid $colorAchivmentBlock;
-	border-bottom: 2px solid $colorAchivmentBlock;
+	border-left: 2px solid $colorAchivment;
+	border-right: 2px solid $colorAchivment;
+	border-bottom: 2px solid $colorAchivment;
 	position: relative;
 	&::before,
 	&::after {
 		content: "";
 		position: absolute;
 		height: 2px;
-		background: $colorAchivmentBlock;
+		background: $colorAchivment;
 		width: calc((100% - 45px) / 2);
 		top: 0;
 	}
@@ -39,15 +38,16 @@
 		right: 0;
 	}
 	&__icon {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%, -40%);
-		width: 35px;
-		height: 35px;
-		color: $colorAchivmentBlock;
-		&_transform {
-			transform: translate(-43%, -40%);
+		width: 100%;
+		height: 100%;
+		color: $colorAchivment;
+		&-wrap {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -40%);
+			width: 35px;
+			height: 35px;
 		}
 	}
 	&__value {
@@ -63,15 +63,16 @@
 
 	@media (max-width: $bp2) {
 		width: 200px;
+		height: 140px;
 	}
 
 	@media (max-width: $bp4) {
-		flex: 1 1 47%;
+		flex: 0 1 43%;
 		height: 130px;
 		&:first-child {
-			flex: 1 1 100%;
+			flex: 0 1 90%;
 		}
-		&__icon {
+		&__icon-wrap {
 			width: 30px;
 			height: 30px;
 		}
@@ -84,14 +85,10 @@
 	}
 
 	@media (max-width: $bp5) {
-		flex: 0 1 80%;
-		border-top: 2px solid $colorAchivmentBlock;
+		flex: 0 1 90%;
+		border-top: 2px solid $colorAchivment;
 		border-left: none;
-		width: 220px;
 		height: 100px;
-		&:first-child {
-			flex: 0 1 80%;
-		}
 		&::before,
 		&::after {
 			height: calc((100% - 30px) / 2);
@@ -105,15 +102,12 @@
 			left: 0;
 			bottom: 0;
 		}
-		&__icon {
-			transform: translate(-45%, -45%);
+		&__icon-wrap {
+			transform: translate(-45%, -50%);
 			width: 25px;
 			height: 25px;
 			top: 50%;
 			left: 0;
-			&_transform {
-				transform: translate(-35%, -45%);
-			}
 		}
 		&__value {
 			font-size: 2.2rem;

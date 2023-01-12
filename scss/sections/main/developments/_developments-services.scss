@@ -1,22 +1,36 @@
+.developments-services {
+	margin-bottom: 175px;
+	color: $addColorText;
+
+	@media (max-width: $bp2) {
+		margin-bottom: 80px;
+	}
+
+	@media (max-width: $bp4) {
+		margin-bottom: 60px;
+	}
+
+	@media (max-width: $bp5) {
+		margin-bottom: 50px;
+	}
+}
+
 .developments-title {
 	width: 666px;
 	height: 526px;
-	padding: 125px 130px;
+	padding-top: 125px;
+	padding-left: 130px;
 	background-color: $addColorElements;
 	position: absolute;
 	top: -252px;
 	left: -116px;
 	z-index: 1;
 	overflow: hidden;
-	&:hover &__icon-item {
-		animation-play-state: paused;
-	}
-	&__title {
-		color: #fff;
-	}
 	&__icon {
+		width: 100%;
+		height: 100%;
 		color: #ffffff66;
-		&-item {
+		&-wrap {
 			position: absolute;
 			animation: rotation 15s linear infinite;
 			&:nth-child(1) {
@@ -53,58 +67,56 @@
 		height: 460px;
 	}
 
-	@media (max-width: $bp1) {
-		height: 400px;
-	}
-
 	@media (max-width: $bp2) {
+		top: -160px;
 		width: 500px;
+		height: 350px;
+		padding-top: 75px;
+		.developments-title__icon-wrap {
+			&:nth-child(1) {
+				top: -53px;
+			}
+			&:nth-child(2) {
+				top: 45px;
+			}
+			&:nth-child(3) {
+				top: 132px;
+			}
+		}
 	}
 
 	@media (max-width: $bp4) {
-		padding: 60px 130px;
-		top: -150px;
-		&:hover &__icon-item {
-			animation-play-state: running;
+		padding-top: 60px;
+		top: -125px;
+		.developments-title__icon-wrap {
+			&:nth-child(1) {
+				top: -34px;
+			}
+			&:nth-child(2) {
+				top: 26px;
+			}
+			&:nth-child(3) {
+				top: 113px;
+			}
 		}
 	}
 
 	@media (max-width: $bp5) {
 		width: 450px;
+		height: 340px;
 	}
 
 	@media (max-width: $bp6) {
-		top: -120px;
-		height: 320px;
-		width: 350px;
+		width: 380px;
 	}
 }
 
-.developments-services {
-	margin-bottom: 175px;
-
-	@media (max-width: $bp2) {
-		margin-bottom: 120px;
-	}
-
-	@media (max-width: $bp4) {
-		margin-bottom: 60px;
-	}
-
-	@media (max-width: $bp5) {
-		margin-bottom: 40px;
-	}
-}
 .developments-prices {
 	@include flex;
 	flex-wrap: wrap;
 	gap: 15px;
-	padding: 0px 10px 0px 10px;
 	position: relative;
 	z-index: 2;
-	@media (max-width: $bp5) {
-		padding: 0;
-	}
 }
 .developments-price {
 	@include flex(space-between, flex-start, column);
@@ -114,7 +126,7 @@
 	background-position: center top;
 	width: 366px;
 	height: 315px;
-	padding: 60px 38px 35px 28px;
+	padding: 60px 35px 35px 30px;
 	cursor: pointer;
 	&:nth-child(1) {
 		background-image: $serviceBgOverlay, url(../img/developments/services-bg1.webp);
@@ -151,15 +163,14 @@
 	}
 	&__title {
 		width: 100%;
-		color: #fff;
 		text-align: left;
-		flex: 0 1 57%;
+		flex: 0 1 50%;
 		border-bottom: 1px solid #fff;
 		line-height: 1;
 	}
 	& .price-button__button-price {
 		font-size: 1rem;
-		border: 2.6px solid #fff;
+		border: 2.5px solid #fff;
 		padding: 13px 25px;
 	}
 	& .price-button__icon {
@@ -168,62 +179,78 @@
 	}
 
 	@media (max-width: $bp0) {
-		padding: 40px 25px 25px 25px;
+		padding: 50px 25px 25px 20px;
 		width: 310px;
 		height: 280px;
 		&__title {
 			font-size: 1.5rem;
+			flex: 0 1 43%;
 		}
 		& .price-button__button-price {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 			border: 2px solid #fff;
-			padding: 11px 15px;
+			padding: 10px 12px;
 		}
 	}
 
 	@media (max-width: $bp1) {
 		width: 280px;
 		height: 250px;
+		&__title {
+			flex: 0 1 50%;
+		}
 		& .price-button__icon {
-			width: 25px;
-			height: 25px;
+			width: 28px;
+			height: 28px;
 		}
 	}
 
 	@media (max-width: $bp2) {
-		padding: 30px 20px 20px 20px;
+		padding: 40px 20px 20px 20px;
 		width: 250px;
 		height: 220px;
 		&__title {
-			flex: 0 1 50%;
-			font-size: 1.3rem;
+			flex: 0 1 46%;
 		}
 	}
 
 	@media (max-width: $bp3) {
 		width: 220px;
-		height: 220px;
 		& .price-button__button-price {
-			padding: 12px 7px;
+			font-size: 0.8rem;
+			padding: 10px 7px;
 		}
 	}
 
 	@media (max-width: $bp4) {
-		flex: 1 1 48%;
+		height: 180px;
+		flex: 0 1 45%;
 		&:first-child {
-			flex: 1 1 84%;
+			flex: 0 1 92%;
 		}
 		&__title {
-			flex: 0 1 40%;
+			font-size: 1.3rem;
+		}
+		& .price-button__button-price {
+			font-size: 1rem;
+			padding: 10px 12px;
 		}
 	}
 
 	@media (max-width: $bp5) {
-		padding: 20px 15px 15px 15px;
-		flex: 0 1 84%;
+		padding: 30px 15px 15px 15px;
+		flex: 0 1 92%;
 		height: 160px;
-		&:first-child {
-			flex: 0 1 84%;
+	}
+
+	@media (max-width: $bp6) {
+		height: 150px;
+		&__title {
+			font-size: 1.2rem;
+		}
+		& .price-button__button-price {
+			font-size: 0.8rem;
+			padding: 10px 12px;
 		}
 	}
 }

@@ -22,28 +22,7 @@
 		font-size: 1.5rem;
 	}
 
-	&__content {
-		@include flex(center, center, column);
-	}
-	&__column {
-		@include flex;
-		&:first-child {
-			.projects__picture {
-				height: 426px;
-			}
-		}
-		&:last-child {
-			.projects__picture {
-				height: 325px;
-			}
-		}
-	}
-	&__picture {
-	}
-	&__img {
-		max-width: 100%;
-		height: 100%;
-	}
+	
 
 	&__footer {
 		@include flex;
@@ -55,38 +34,6 @@
 		&:hover {
 			background-color: #ffffff20;
 		}
-	}
-}
-.projects-customer {
-	position: relative;
-	&__img {
-		max-width: 100%;
-		height: 100%;
-	}
-	&__content {
-		@include flex(center, center, column);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #f6ae48cc;
-		border: 10px solid #fff;
-		transition: transform 0.4s;
-		&:hover {
-			transform: scale(1.05);
-		}
-	}
-	&__title {
-		font-size: 3rem;
-		letter-spacing: 4px;
-		line-height: 1;
-		font-weight: bold;
-	}
-	&__descr {
-		font-size: 1.25rem;
-		letter-spacing: 2px;
-		line-height: 1;
 	}
 }
 
