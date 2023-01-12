@@ -13,6 +13,9 @@
 	&__partners {
 		@include flex(center, center, column);
 		gap: 40px;
+		margin-right: 50px;
+	}
+	&__partner {
 		flex: 0 1 200px;
 	}
 	&__img {

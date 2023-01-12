@@ -1,32 +1,35 @@
-@media (max-width: $bp4) {
+@media (max-width: $bp2) {
 	.hero {
-		padding-top: 130px;
-		padding-bottom: 100px;
+		padding-top: $bp2PaddingTop;
+		padding-bottom: $bp2PaddingBottom;
+		&__content {
+			margin-bottom: 40px;
+		}
 		&__title {
 			margin-bottom: 20px;
 		}
 	}
 }
 
-@media (max-width: $bp5) {
+@media (max-width: $bp4) {
 	.hero {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: $bp4PaddingTop;
+		padding-bottom: $bp4PaddingBottom;
 		&__content {
 			margin-bottom: 30px;
 		}
 	}
 }
 
-@media (max-width: $bp6) {
+@media (max-width: $bp5) {
 	.hero {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: $bp5PaddingTop;
+		padding-bottom: $bp5PaddingBottom;
 		&__title {
-			margin-bottom: 15px;
+			padding: 0;
 		}
 		&__descr {
-			line-height: 1.25;
+			padding: 0;
 		}
 	}
 }

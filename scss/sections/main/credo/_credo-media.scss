@@ -1,28 +1,32 @@
-@media (max-width: $bp4) {
+@media (max-width: $bp2) {
 	.credo {
-		padding-top: 60px;
-		padding-bottom: 80px;
+		padding-top: $bp2PaddingTop;
+		padding-bottom: $bp2PaddingBottom;
 		&__title {
 			margin-bottom: 20px;
 		}
+		&__descr {
+			padding-left: 40px;
+			padding-right: 40px;
+			line-height: 1.5;
+		}
+	}
+}
+
+@media (max-width: $bp4) {
+	.credo {
+		padding-top: $bp4PaddingTop;
+		padding-bottom: $bp4PaddingBottom;
 	}
 }
 
 @media (max-width: $bp5) {
-	.credo__descr {
-		line-height: 1.5;
-	}
-}
-
-@media (max-width: $bp6) {
 	.credo {
-		padding-top: 30px;
-		padding-bottom: 60px;
-		&__title {
-			margin-bottom: 15px;
-		}
+		padding-top: $bp5PaddingTop;
+		padding-bottom: $bp5PaddingBottom;
 		&__descr {
-			line-height: 1.25;
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 }

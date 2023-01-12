@@ -9,19 +9,19 @@ $bp6: 430px;
 
 // padding tap and bottom of section
 	// padding tap and bottom on "max-width 950px"
-		$bp2PaddingTop: 80px;
-		$bp2PaddingBottom: 80px;
+	$bp2PaddingTop: 80px;
+	$bp2PaddingBottom: 80px;
 	// padding tap and bottom on "max-width 767.98px"
-		$bp4PaddingTop: 60px;
-		$bp4PaddingBottom: 60px;
+	$bp4PaddingTop: 60px;
+	$bp4PaddingBottom: 60px;
 	// padding tap and bottom on "max-width 576px"
-		$bp5PaddingTop: 50px;
-		$bp5PaddingBottom: 50px;
+	$bp5PaddingTop: 50px;
+	$bp5PaddingBottom: 50px;
 
 // overlay for sections
 $sectionsBgOverlay: linear-gradient(85deg, rgba(48, 50, 99, 0.67) 0%, rgba(48, 50, 99, 0.67) 100%);
 
-// block "developments-price"
+// overlay for block "developments-price"
 $serviceBgOverlay: linear-gradient(85deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0.67) 100%);
 
 // additional color of text site
@@ -34,7 +34,8 @@ $addColorElements: #f6ae48;
 $colorIcons: #00b9e7;
 
 // color of achivment-block
-$colorAchivmentBlock: #fff;
+$colorAchivment: #fff;
 
 // color of hover studio-service
-$colorHoverstudioBlock: #fff;
+$colorHoverStudio: #fff;
+$transitionHoverStudio: 0.5s;
