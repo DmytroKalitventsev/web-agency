@@ -1038,7 +1038,6 @@ body {
      -moz-column-gap: 33px;
           column-gap: 33px;
   width: 100%;
-  min-height: 376px;
 }
 @media (max-width: 950px) {
   .studio-services {
@@ -1071,7 +1070,6 @@ body {
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
   padding: 15px 25px;
-  height: 90%;
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
   cursor: pointer;
@@ -1087,9 +1085,9 @@ body {
   color: #fff;
 }
 .studio-service:hover .price-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 .studio-service:first-child {
   padding-left: 0;
@@ -1107,7 +1105,9 @@ body {
   background-color: #f6ae48;
 }
 .studio-service .price-button {
-  display: none;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
 }
 .studio-service__icon {
   color: #00b9e7;
@@ -1885,12 +1885,16 @@ body {
   .projects__work:nth-child(-n+2) {
     width: 33.3333333333%;
   }
+  .projects__work:nth-child(-n+2):hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
   .projects__work:nth-last-child(-n+4) {
     width: 33.3333333333%;
   }
   .projects__work:nth-last-child(-n+4):hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   .projects__footer {
     min-height: 90px;

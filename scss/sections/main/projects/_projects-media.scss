@@ -25,11 +25,14 @@
 		&__work {
 			&:nth-child(-n + 2) {
 				width: calc(100% / 3);
+				&:hover {
+					transform: scale(1.2);
+				}
 			}
 			&:nth-last-child(-n + 4) {
 				width: calc(100% / 3);
 				&:hover {
-					transform: scale(1.1);
+					transform: scale(1.2);
 				}
 			}
 		}

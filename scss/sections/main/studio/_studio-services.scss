@@ -2,7 +2,6 @@
 	@include flex(center, flex-start);
 	column-gap: 33px;
 	width: 100%;
-	min-height: 376px;
 
 	@media (max-width: $bp2) {
 		align-items: center;
@@ -15,7 +14,6 @@
 	position: relative;
 	flex: 0 1 33.333%;
 	padding: 15px 25px;
-	height: 90%;
 	transition: background-color $transitionHoverStudio;
 	cursor: pointer;
 	&:hover {
@@ -28,7 +26,8 @@
 			color: $colorHoverStudio;
 		}
 		& .price-button {
-			display: flex;
+			opacity: 1;
+			transform: translateY(0);
 		}
 	}
 	&:first-child {
@@ -46,7 +45,8 @@
 		}
 	}
 	& .price-button {
-		display: none;
+		transform: translateY(100%);
+		opacity: 0;
 	}
 	&__icon {
 		color: $colorIcons;
