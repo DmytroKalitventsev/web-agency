@@ -1086,8 +1086,8 @@ body {
 }
 .studio-service:hover .price-button {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .studio-service:first-child {
   padding-left: 0;
@@ -1105,8 +1105,8 @@ body {
   background-color: #f6ae48;
 }
 .studio-service .price-button {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   opacity: 0;
 }
 .studio-service__icon {
@@ -1202,7 +1202,7 @@ body {
   }
   .studio-service__descr {
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     line-height: 1.5;
     font-size: 0.7rem;
   }
