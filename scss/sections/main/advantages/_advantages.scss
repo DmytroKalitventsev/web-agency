@@ -24,6 +24,7 @@
 	@include flex(center, flex-start, column);
 	flex-wrap: wrap;
 	margin-bottom: 45px;
+	flex: 0 1 33.333%;
 	&__title {
 		&-wrap {
 			@include flex;

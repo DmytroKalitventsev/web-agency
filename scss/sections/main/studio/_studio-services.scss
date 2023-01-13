@@ -2,6 +2,7 @@
 	@include flex(center, flex-start);
 	column-gap: 33px;
 	width: 100%;
+	min-height: 376px;
 
 	@media (max-width: $bp2) {
 		align-items: center;
@@ -12,8 +13,9 @@
 .studio-service {
 	@include flex(flex-start, flex-start, column);
 	position: relative;
-	flex: 0 1 34%;
+	flex: 0 1 33.333%;
 	padding: 15px 25px;
+	height: 90%;
 	transition: background-color $transitionHoverStudio;
 	cursor: pointer;
 	&:hover {
@@ -70,6 +72,7 @@
 		margin-bottom: 15px;
 		font-size: 0.6rem;
 		line-height: 1.7;
+		flex: 1 1 auto;
 	}
 
 	@media (max-width: $bp2) {
