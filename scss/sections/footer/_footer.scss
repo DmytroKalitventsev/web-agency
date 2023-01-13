@@ -6,12 +6,16 @@
 	}
 	&__start {
 		@include flex;
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 		border-radius: 10px;
 		cursor: pointer;
+		transition: all 0.4s;
 		&:hover {
 			background-color: #30326345;
+			& .footer__icon {
+				transform: scale(1.2) rotate(270deg);
+			}
 		}
 	}
 	&__icon {
