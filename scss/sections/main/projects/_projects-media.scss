@@ -1,3 +1,18 @@
+@media (max-width: $bp0) {
+	.projects {
+		&__work {
+			&:nth-child(-n + 2) {
+				height: 350px;
+				width: calc(100% / 1);
+			}
+			&:nth-last-child(-n + 4) {
+				height: 250px;
+				width: calc(100% / 2);
+			}
+		}
+	}
+}
+
 @media (max-width: $bp1) {
 	.projects {
 		& .background-text {
@@ -22,20 +37,6 @@
 		&__heared {
 			min-height: 90px;
 		}
-		&__work {
-			&:nth-child(-n + 2) {
-				width: calc(100% / 3);
-				&:hover {
-					transform: scale(1.2);
-				}
-			}
-			&:nth-last-child(-n + 4) {
-				width: calc(100% / 3);
-				&:hover {
-					transform: scale(1.2);
-				}
-			}
-		}
 		&__footer {
 			min-height: 90px;
 		}
@@ -52,14 +53,25 @@
 		}
 		&__work {
 			&:nth-child(-n + 2) {
-				width: calc(100% / 2);
-			}
-			&:nth-last-child(-n + 4) {
-				width: calc(100% / 2);
+				height: 300px;
 			}
 		}
 		&__footer {
 			min-height: 80px;
+		}
+	}
+}
+
+@media (max-width: $bp5) {
+	.projects {
+		&__work {
+			&:nth-child(-n + 2) {
+				width: calc(100% / 1);
+			}
+			&:nth-last-child(-n + 4) {
+				width: calc(100% / 1);
+				height: 200px;
+			}
 		}
 	}
 }
@@ -76,11 +88,9 @@
 		}
 		&__work {
 			&:nth-child(-n + 2) {
-				width: calc(100% / 1);
-				height: 200px;
+				height: 250px;
 			}
 			&:nth-last-child(-n + 4) {
-				width: calc(100% / 2);
 				height: 150px;
 			}
 		}

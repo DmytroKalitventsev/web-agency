@@ -1,12 +1,7 @@
 @media (max-width: $bp0) {
-	.adaptate {
-		&__content {
-			flex: 0 1 40%;
-		}
-	}
 	.adaptate-devices {
-		top: 10%;
-		right: -130%;
+		top: 0%;
+		right: -103%;
 	}
 	.adaptate-device {
 		&_iphone {
@@ -23,7 +18,7 @@
 			}
 		}
 		&_ipad {
-			right: 135px;
+			right: 128px;
 			.adaptate-device__img-wrap {
 				&:first-child {
 					width: 195px;
@@ -50,6 +45,12 @@
 	}
 }
 
+@media (max-width: $bp1) {
+	.adaptate-devices {
+		top: 10%;
+	}
+}
+
 @media (max-width: $bp2) {
 	.adaptate {
 		padding-top: $bp2PaddingTop;
@@ -71,47 +72,15 @@
 	.adaptate-device {
 		&_iphone {
 			right: initial;
-			left: 73px;
-			.adaptate-device__img-wrap {
-				&:first-child {
-					width: 71px;
-					height: 139px;
-				}
-				&:last-child {
-					top: 25px;
-					right: 6px;
-					width: 60px;
-					height: 92px;
-				}
-			}
+			left: 86px;
 		}
 		&_ipad {
 			right: initial;
-			left: 270px;
-			.adaptate-device__img-wrap {
-				&:first-child {
-					width: 165px;
-					height: 256px;
-				}
-				&:last-child {
-					width: 131px;
-					height: 193px;
-				}
-			}
+			left: 320px;
 		}
 		&_macbook {
 			right: initial;
-			left: 950px;
-			.adaptate-device__img-wrap {
-				&:first-child {
-					width: 658px;
-					height: 342px;
-				}
-				&:last-child {
-					width: 477px;
-					height: 266px;
-				}
-			}
+			left: 1040px;
 		}
 	}
 }
@@ -127,9 +96,9 @@
 	.adaptate {
 		padding-top: $bp5PaddingTop;
 		padding-bottom: $bp5PaddingBottom;
-	}
-	.adaptate .content__descr {
-		margin-bottom: 20px;
+		& .content__descr {
+			margin-bottom: 20px;
+		}
 	}
 	.adaptate-devices {
 		height: 249px;
@@ -152,7 +121,7 @@
 			}
 		}
 		&_ipad {
-			left: 175px;
+			left: 181px;
 			top: 72px;
 			.adaptate-device__img-wrap {
 				&:first-child {

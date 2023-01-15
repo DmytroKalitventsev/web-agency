@@ -8,11 +8,11 @@
 	padding-top: 120px;
 	padding-bottom: 115px;
 	&__container {
-		@include flex(flex-start, flex-start);
+		@include flex(space-between, flex-start);
 		column-gap: 15%;
 	}
 	&__content {
-		margin-left: 50px;
+		margin-left: 70px;
 	}
 	&__title {
 		margin-bottom: 45px;

@@ -1,27 +1,38 @@
 .footer {
 	background-color: $addColorElements;
+	color: $addColorText;
 	&__container {
+		@include flex(space-between);
+		min-height: 100px;
+	}
+	&__logo {
 		@include flex;
-		min-height: 110px;
+		column-gap: 10px;
+		& .logo__img {
+			background-color: #fff;
+			border-radius: 50%;
+		}
 	}
 	&__start {
 		@include flex;
-		width: 50px;
-		height: 50px;
+		width: 60px;
+		height: 60px;
 		border-radius: 10px;
 		cursor: pointer;
-		transition: all 0.4s;
+		transform: translateX(10px);
+		transition: background-color 0.2s ease 0s;
 		&:hover {
 			background-color: #30326345;
 			& .footer__icon {
-				transform: scale(1.2) rotate(270deg);
+				transform: scale(1.1) rotate(270deg);
 			}
 		}
 	}
 	&__icon {
 		color: #fff;
-		width: 30px;
-		height: 30px;
+		width: 40px;
+		height: 40px;
+		transition: transform 0.4s ease 0s;
 		transform: rotate(270deg);
 	}
 }

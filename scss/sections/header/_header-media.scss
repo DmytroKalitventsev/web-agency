@@ -2,9 +2,6 @@
 	.header__container {
 		min-height: 80px;
 	}
-	.logo {
-		width: 50px;
-	}
 	.menu__list {
 		column-gap: 25px;
 		font-size: 1.1rem;
@@ -79,7 +76,7 @@
 		height: 50px;
 		border-radius: 10px;
 		position: relative;
-		transition: background-color 0.2s;
+		transition: background-color 0.2s ease 0s;
 		&:hover {
 			background-color: #30326345;
 		}

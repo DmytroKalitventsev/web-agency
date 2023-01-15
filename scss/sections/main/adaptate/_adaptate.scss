@@ -5,14 +5,14 @@
 		@include flex(flex-start, flex-start);
 	}
 	&__content {
-		flex: 0 1 46%;
+		flex: 0 1 50%;
 		position: relative;
 	}
 }
 .adaptate-devices {
 	position: absolute;
 	top: -13%;
-	right: -117%;
+	right: -110%;
 	width: 500px;
 }
 .adaptate-device {
@@ -72,8 +72,6 @@
 		}
 	}
 	&__img {
-		width: 100%;
-		height: 100%;
 		&-wrap {
 			position: absolute;
 		}
