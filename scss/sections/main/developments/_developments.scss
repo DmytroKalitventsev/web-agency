@@ -1,5 +1,5 @@
 .developments {
-	padding-top: calc($generalPaddingTop + 80px);
+	padding-top: calc($generalPaddingTop + 40px);
 	padding-bottom: $generalPaddingBottom;
 	&__container {
 		@include flex(center, center, column);
@@ -12,11 +12,12 @@
 	}
 	&__partners {
 		@include flex(center, center, column);
-		gap: 40px;
+		gap: 30px;
 		margin-right: 50px;
 	}
 	&__partner {
 		flex: 0 1 213px;
+		min-width: 200px;
 	}
 }
 

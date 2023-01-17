@@ -1,6 +1,6 @@
 @media (max-width: $bp2) {
 	.developments {
-		padding-top: 130px;
+		padding-top: calc($bp2PaddingTop + 40px);
 		padding-bottom: $bp2PaddingBottom;
 		&__promotion {
 			flex-direction: column;
@@ -11,17 +11,18 @@
 			margin-top: 30px;
 			flex-direction: row;
 			width: 100%;
-			gap: 10%;
+			gap: 5%;
 		}
 		&__partner {
-			flex: 0 1 170px;
+			flex: 0 1 180px;
+			min-width: initial;
 		}
 	}
 }
 
 @media (max-width: $bp4) {
 	.developments {
-		padding-top: 105px;
+		padding-top: calc($bp4PaddingTop + 40px);
 		padding-bottom: $bp4PaddingBottom;
 	}
 }
