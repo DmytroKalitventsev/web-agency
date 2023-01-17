@@ -1,12 +1,12 @@
 .developments {
-	padding-top: 208px;
-	padding-bottom: 117px;
+	padding-top: calc($generalPaddingTop + 80px);
+	padding-bottom: $generalPaddingBottom;
 	&__container {
 		@include flex(center, center, column);
 		position: relative;
 	}
 	&__promotion {
-		@include flex(flex-start);
+		@include flex(flex-start, flex-start);
 		width: 100%;
 		column-gap: 15%;
 	}
@@ -16,7 +16,7 @@
 		margin-right: 50px;
 	}
 	&__partner {
-		flex: 0 1 200px;
+		flex: 0 1 213px;
 	}
 }
 

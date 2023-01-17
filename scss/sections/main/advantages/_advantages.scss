@@ -5,38 +5,44 @@
 	background-size: cover;
 	background-position: center top;
 	color: $addColorText;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: $generalPaddingTop;
+	padding-bottom: $generalPaddingBottom;
 	&__content {
-		@include flex(center, center, column);
+		@include flex(flex-start, center, column);
 	}
 	&__title {
-		margin-bottom: 70px;
+		margin-bottom: 35px;
 	}
 }
 .advantages-items {
 	@include flex(center, flex-start);
-	column-gap: 3.5%;
+	column-gap: 70px;
 	max-width: 1360px;
 	padding: 0 15px;
+	margin-bottom: 45px;
 }
 .advantages-item {
 	@include flex(center, flex-start, column);
 	flex-wrap: wrap;
-	margin-bottom: 45px;
 	flex: 0 1 33.333%;
+	&:nth-child(2) {
+		.advantages-item__title-wrap {
+			column-gap: 10px;
+		}
+	}
 	&__title {
 		&-wrap {
 			@include flex;
-			flex: 1 0 75px;
-			column-gap: 10px;
+			flex: 1 0 66px;
+			column-gap: 15px;
 		}
 	}
 	&__icon {
 		color: $colorIcons;
 		&-wrap {
-			width: 65px;
-			height: 55px;
+			width: 60px;
+			height: 60px;
+			flex: 0 0 60px;
 		}
 	}
 	&__descr {

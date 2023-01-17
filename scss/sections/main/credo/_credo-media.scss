@@ -17,6 +17,9 @@
 	.credo {
 		padding-top: $bp4PaddingTop;
 		padding-bottom: $bp4PaddingBottom;
+		&__title {
+			margin-bottom: 15px;
+		}
 	}
 }
 

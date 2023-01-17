@@ -40,6 +40,7 @@ body {
 .title {
 	font-weight: bold;
 	font-size: 2rem;
+	text-transform: uppercase;
 	letter-spacing: 2px;
 	line-height: 1.25;
 	text-align: left;
@@ -51,7 +52,7 @@ body {
 		font-size: 1.5rem;
 	}
 	&_h3 {
-		font-size: 1.25rem;
+		font-size: 1.2rem;
 	}
 
 	@media (max-width: $bp2) {
@@ -64,7 +65,7 @@ body {
 			font-size: 1.4rem;
 		}
 		&_h3 {
-			font-size: 1.1rem;
+			font-size: 1.2rem;
 		}
 	}
 
@@ -77,16 +78,6 @@ body {
 	@media (max-width: $bp5) {
 		&_h1 {
 			font-size: 1.6rem;
-		}
-	}
-
-	@media (max-width: $bp6) {
-		font-size: 1.6rem;
-		&_h2 {
-			font-size: 1.2rem;
-		}
-		&_h3 {
-			font-size: 1rem;
 		}
 	}
 }
@@ -121,7 +112,7 @@ body {
 	white-space: nowrap;
 	text-transform: uppercase;
 	line-height: 1;
-	color: #00000033;
+	color: #0000001b;
 
 	@media (max-width: $bp2) {
 		top: -33%;
@@ -136,7 +127,7 @@ body {
 
 	@media (max-width: $bp6) {
 		letter-spacing: 3px;
-		top: -31%;
+		top: -25%;
 		left: -4%;
 	}
 }
@@ -148,7 +139,7 @@ body {
 	&__button-price {
 		display: inline-block;
 		text-align: center;
-		font-size: 0.74rem;
+		font-size: 0.75rem;
 		line-height: 1;
 		color: #fff;
 		border: 2px solid #fff;
@@ -156,10 +147,6 @@ body {
 		transition: border-color 0.2s ease 0s, transform 0.4s ease 0s;
 		&:hover {
 			transform: scale(1.05);
-		}
-
-		@media (max-width: $bp6) {
-			min-width: 100px;
 		}
 	}
 	&__view {
@@ -175,6 +162,18 @@ body {
 		height: 22px;
 		&:hover {
 			transform: scale(1.2);
+		}
+	}
+
+	@media (max-width: $bp2) {
+		&__button-price {
+			font-size: .85rem;
+		}
+	}
+
+	@media (max-width: $bp6) {
+		&__button-price {
+			min-width: 100px;
 		}
 	}
 }
@@ -195,6 +194,10 @@ body {
 		max-width: 577px;
 	}
 
+	@media (max-width: $bp1) {
+		margin-left: 40px;
+	}
+
 	@media (max-width: $bp2) {
 		margin-left: 0;
 		&__title {
@@ -202,7 +205,7 @@ body {
 		}
 		&__descr {
 			line-height: 1.5;
-			font-size: 0.85rem;
+			font-size: 0.9rem;
 			max-width: initial;
 		}
 	}
@@ -229,10 +232,10 @@ body {
 	}
 
 	@media (max-width: $bp4) {
-		padding: 14px 23px;
+		padding: 17px 24px;
 	}
 
 	@media (max-width: $bp6) {
-		padding: 13px 15px;
+		padding: 17px 16px;
 	}
 }

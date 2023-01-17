@@ -4,15 +4,15 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
-	padding-top: 120px;
-	padding-bottom: 155px;
+	padding-top: $generalPaddingTop;
+	padding-bottom: $generalPaddingBottom;
 	color: $addColorText;
 	&__container {
 		@include flex(center, center, column);
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 55px;
+		margin-bottom: 30px;
 	}
 	&__descr {
 		text-align: center;

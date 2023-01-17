@@ -5,19 +5,21 @@
 		&__content {
 			align-items: flex-start;
 			flex-direction: column;
-			margin-bottom: 80px;
+			margin-bottom: 75px;
 		}
 		&__title {
-			margin-bottom: 5px;
+			margin-bottom: 3px;
 			margin-right: 0;
 		}
 		&__descr {
+			font-size: .9rem;
 			margin-right: 0;
 			max-width: initial;
 			line-height: 1.5;
 		}
 		& .background-text {
 			left: -2%;
+			top: -4%;
 			font-size: 8rem;
 		}
 	}
@@ -28,7 +30,7 @@
 		padding-top: $bp4PaddingTop;
 		padding-bottom: $bp4PaddingBottom;
 		&__content {
-			margin-bottom: 60px;
+			margin-bottom: 55px;
 		}
 	}
 }
@@ -38,7 +40,7 @@
 		padding-top: $bp5PaddingTop;
 		padding-bottom: $bp5PaddingBottom;
 		&__content {
-			margin-bottom: 50px;
+			margin-bottom: 45px;
 		}
 	}
 }

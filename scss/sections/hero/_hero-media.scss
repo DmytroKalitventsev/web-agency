@@ -3,7 +3,7 @@
 		padding-top: $bp2PaddingTop;
 		padding-bottom: $bp2PaddingBottom;
 		&__content {
-			margin-bottom: 40px;
+			margin-bottom: 45px;
 		}
 		&__title {
 			margin-bottom: 20px;
@@ -15,8 +15,8 @@
 	.hero {
 		padding-top: $bp4PaddingTop;
 		padding-bottom: $bp4PaddingBottom;
-		&__content {
-			margin-bottom: 30px;
+		&__title {
+			margin-bottom: 15px;
 		}
 	}
 }
@@ -25,6 +25,9 @@
 	.hero {
 		padding-top: $bp5PaddingTop;
 		padding-bottom: $bp5PaddingBottom;
+		&__content {
+			margin-bottom: 25px;
+		}
 		&__title {
 			padding: 0;
 		}

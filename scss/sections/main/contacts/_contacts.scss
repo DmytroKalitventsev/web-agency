@@ -5,17 +5,17 @@
 	background-size: cover;
 	background-position: center top;
 	color: $addColorText;
-	padding-top: 120px;
-	padding-bottom: 115px;
+	padding-top: $generalPaddingTop;
+	padding-bottom: $generalPaddingBottom;
 	&__container {
 		@include flex(space-between, flex-start);
-		column-gap: 15%;
+		column-gap: 10%;
 	}
 	&__content {
 		margin-left: 70px;
 	}
 	&__title {
-		margin-bottom: 45px;
+		margin-bottom: 20px;
 	}
 	&__descr {
 		max-width: 355px;

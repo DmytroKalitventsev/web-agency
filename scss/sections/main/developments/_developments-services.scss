@@ -1,5 +1,5 @@
 .developments-services {
-	margin-bottom: 175px;
+	margin-bottom: 130px;
 	color: $addColorText;
 
 	@media (max-width: $bp2) {
@@ -22,7 +22,7 @@
 	padding-left: 130px;
 	background-color: $addColorElements;
 	position: absolute;
-	top: -252px;
+	top: -260px;
 	left: -116px;
 	z-index: 1;
 	overflow: hidden;
@@ -227,7 +227,7 @@
 			flex: 0 1 92%;
 		}
 		&__title {
-			font-size: 1.3rem;
+			font-size: 1.5rem;
 		}
 		& .price-button__button-price {
 			font-size: 1rem;
@@ -244,7 +244,7 @@
 	@media (max-width: $bp6) {
 		height: 150px;
 		&__title {
-			font-size: 1.2rem;
+			font-size: 1.4rem;
 		}
 		& .price-button__button-price {
 			font-size: 0.8rem;

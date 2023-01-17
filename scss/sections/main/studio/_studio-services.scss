@@ -1,11 +1,12 @@
 .studio-services {
 	@include flex(center, flex-start);
-	column-gap: 33px;
+	column-gap: 15px;
 	width: 100%;
 
 	@media (max-width: $bp2) {
 		align-items: center;
 		flex-direction: column;
+		column-gap: initial;
 	}
 }
 
@@ -19,14 +20,14 @@
 	&:hover {
 		background-color: $addColorElements;
 		color: $colorHoverStudio;
-		&:first-child::before {
+		&:first-child::before,
+		&:last-child::after {
 			opacity: 1;
 		}
 		& .studio-service__icon {
 			color: $colorHoverStudio;
 		}
 		& .price-button {
-			opacity: 1;
 			transform: translateX(0);
 		}
 	}
@@ -44,20 +45,33 @@
 			background-color: $addColorElements;
 		}
 	}
+	&:last-child {
+		padding-right: 0;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -25px;
+			opacity: 0;
+			width: 25px;
+			height: 100%;
+			transition: opacity $transitionHoverStudio;
+			background-color: $addColorElements;
+		}
+	}
 	& .price-button {
 		transform: translateX(-2000%);
-		opacity: 0;
 	}
 	&__icon {
 		color: $colorIcons;
 		&-wrap {
-			margin-bottom: 12px;
+			margin-bottom: 10px;
 			height: 50px;
 			width: 30px;
 			&_size {
-				margin-bottom: 18px;
-				height: 44px;
-				width: 54px;
+				margin-bottom: 15px;
+				height: 45px;
+				width: 55px;
 			}
 		}
 	}
@@ -68,9 +82,8 @@
 	}
 	&__descr {
 		margin-bottom: 15px;
-		font-size: 0.6rem;
+		font-size: 0.65rem;
 		line-height: 1.7;
-		flex: 1 1 auto;
 	}
 
 	@media (max-width: $bp2) {
@@ -86,6 +99,9 @@
 					opacity: 1;
 				}
 			}
+		}
+		&:last-child {
+			padding-top: 5px;
 		}
 		&:nth-child(-n + 3) {
 			&::before {
@@ -113,25 +129,36 @@
 		}
 		&__icon {
 			&-wrap {
-				margin-right: 20px;
-				margin-bottom: 0;
-				height: 44px;
-				width: 26px;
+				margin-right: 10px;
+				margin-bottom: 5px;
+				height: 47px;
+				width: 28px;
 				&_size {
 					margin-bottom: 0;
-					width: 46px;
+					width: 45px;
 				}
 			}
 		}
 		&__title {
 			margin-bottom: 0;
-			font-size: 0.95rem;
+			font-size: 1rem;
 		}
 		&__descr {
-			margin-top: 5px;
-			margin-bottom: 0;
+			margin-bottom: 5px;
 			line-height: 1.5;
-			font-size: .7rem;
+			font-size: .8rem;
+		}
+	}
+
+	@media (max-width: $bp4) {
+		&__icon {
+			&-wrap {
+				height: 44px;
+				width: 26px;
+				&_size {
+					width: 43px;
+				}
+			}
 		}
 	}
 }

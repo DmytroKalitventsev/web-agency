@@ -8,6 +8,9 @@ $bp5: 576px;
 $bp6: 430px;
 
 // padding tap and bottom of section
+	// padding tap and bottom on "min-width 950px"
+	$generalPaddingTop: 150px;
+	$generalPaddingBottom: 140px;
 	// padding tap and bottom on "max-width 950px"
 	$bp2PaddingTop: 80px;
 	$bp2PaddingBottom: 80px;

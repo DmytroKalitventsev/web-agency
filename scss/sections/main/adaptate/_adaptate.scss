@@ -1,6 +1,6 @@
 .adaptate {
-	padding-top: 210px;
-	padding-bottom: 160px;
+	padding-top: calc($generalPaddingTop + 50px);
+	padding-bottom: $generalPaddingBottom;
 	&__container {
 		@include flex(flex-start, flex-start);
 	}

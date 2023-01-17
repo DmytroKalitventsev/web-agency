@@ -4,8 +4,8 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center top;
-	padding-top: 190px;
-	padding-bottom: 120px;
+	padding-top: calc($generalPaddingTop + 60px);
+	padding-bottom: $generalPaddingBottom;
 	color: $addColorText;
 	&__container {
 		@include flex(center, center, column);

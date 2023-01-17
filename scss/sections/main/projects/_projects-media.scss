@@ -2,11 +2,11 @@
 	.projects {
 		&__work {
 			&:nth-child(-n + 2) {
-				height: 350px;
+				height: 400px;
 				width: calc(100% / 1);
 			}
 			&:nth-last-child(-n + 4) {
-				height: 250px;
+				height: 300px;
 				width: calc(100% / 2);
 			}
 		}
@@ -18,27 +18,24 @@
 		& .background-text {
 			letter-spacing: 3px;
 			font-size: 3rem;
-			top: 10%;
+			top: 15%;
 		}
 		&__heared {
-			min-height: 100px;
+			min-height: 110px;
 		}
 		&__footer {
-			min-height: 100px;
+			min-height: 110px;
 		}
 	}
 }
 
 @media (max-width: $bp2) {
 	.projects {
-		& .background-text {
-			top: 15%;
-		}
 		&__heared {
-			min-height: 90px;
+			min-height: 100px;
 		}
 		&__footer {
-			min-height: 90px;
+			min-height: 100px;
 		}
 	}
 }
@@ -46,18 +43,21 @@
 @media (max-width: $bp4) {
 	.projects {
 		& .background-text {
-			top: 17%;
+			top: 20%;
 		}
 		&__heared {
-			min-height: 80px;
+			min-height: 90px;
 		}
 		&__work {
 			&:nth-child(-n + 2) {
-				height: 300px;
+				height: 350px;
+			}
+			&:nth-last-child(-n + 4) {
+				height: 250px;
 			}
 		}
 		&__footer {
-			min-height: 80px;
+			min-height: 90px;
 		}
 	}
 }
@@ -67,10 +67,11 @@
 		&__work {
 			&:nth-child(-n + 2) {
 				width: calc(100% / 1);
+				height: 300px;
 			}
 			&:nth-last-child(-n + 4) {
 				width: calc(100% / 1);
-				height: 200px;
+				height: 250px;
 			}
 		}
 	}
@@ -79,9 +80,9 @@
 @media (max-width: $bp6) {
 	.projects {
 		& .background-text {
-			letter-spacing: 2px;
-			font-size: 2.2rem;
-			top: 26%;
+			letter-spacing: 1px;
+			font-size: 2.3rem;
+			top: 29%;
 		}
 		&__title {
 			font-size: 1.3rem;
@@ -91,7 +92,7 @@
 				height: 250px;
 			}
 			&:nth-last-child(-n + 4) {
-				height: 150px;
+				height: 200px;
 			}
 		}
 	}

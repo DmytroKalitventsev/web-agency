@@ -1,7 +1,7 @@
 .achivments {
 	@include flex;
 	flex-wrap: wrap;
-	gap: 4.87%;
+	gap: 55px;
 	width: 100%;
 	color: $addColorText;
 
@@ -37,6 +37,11 @@
 	&::after {
 		right: 0;
 	}
+	&:nth-child(2) {
+		.achivment__icon-wrap {
+			transform: translate(-45%, -40%);
+		}
+	}
 	&__icon {
 		color: $colorAchivment;
 		&-wrap {
@@ -51,7 +56,7 @@
 	&__value {
 		font-size: 2rem;
 		font-weight: bold;
-		margin-bottom: 5px;
+		margin-bottom: 8px;
 		letter-spacing: 2px;
 	}
 	&__descr {
@@ -62,11 +67,26 @@
 	@media (max-width: $bp2) {
 		width: 200px;
 		height: 140px;
+		&::before,
+		&::after {
+			width: calc((100% - 43px) / 2);
+		}
+		&__icon-wrap {
+			width: 32px;
+			height: 32px;
+		}
+		&__value {
+			margin-bottom: 5px;
+		}
 	}
 
 	@media (max-width: $bp4) {
 		flex: 0 1 43%;
-		height: 130px;
+		height: 120px;
+		&::before,
+		&::after {
+			width: calc((100% - 40px) / 2);
+		}
 		&:first-child {
 			flex: 0 1 90%;
 		}
@@ -86,10 +106,10 @@
 		flex: 0 1 90%;
 		border-top: 2px solid $colorAchivment;
 		border-left: none;
-		height: 100px;
+		height: 110px;
 		&::before,
 		&::after {
-			height: calc((100% - 30px) / 2);
+			height: calc((100% - 35px) / 2);
 			width: 2px;
 			top: initial;
 		}
@@ -100,18 +120,17 @@
 			left: 0;
 			bottom: 0;
 		}
+		&:nth-child(2) {
+			.achivment__icon-wrap {
+				transform: translate(-40%, -50%);
+			}
+		}
 		&__icon-wrap {
 			transform: translate(-45%, -50%);
-			width: 25px;
-			height: 25px;
+			width: 28px;
+			height: 28px;
 			top: 50%;
 			left: 0;
-		}
-		&__value {
-			font-size: 2.2rem;
-		}
-		&__descr {
-			font-size: 0.85rem;
 		}
 	}
 }

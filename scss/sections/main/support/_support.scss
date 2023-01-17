@@ -1,9 +1,9 @@
 .support {
-	padding-top: 150px;
-	padding-bottom: 230px;
+	padding-top: $generalPaddingTop;
+	padding-bottom: $generalPaddingBottom;
 	&__container {
 		@include flex(flex-start, center);
-		column-gap: 4.5%;
+		column-gap: 5%;
 	}
 	&__img {
 		width: 100%;
