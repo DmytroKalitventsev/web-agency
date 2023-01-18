@@ -15,9 +15,12 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
-		&__title-wrap {
-			flex: 0 0 auto;
-			column-gap: 10px;
+		&__title {
+			max-height: 55px;
+			&-wrap {
+				flex: 0 0 auto;
+				column-gap: 10px;
+			}
 		}
 		&__icon-wrap {
 			height: 55px;
@@ -27,6 +30,7 @@
 		&__descr {
 			line-height: 1.5;
 			font-size: 0.9rem;
+			max-height: 238px;
 		}
 	}
 }

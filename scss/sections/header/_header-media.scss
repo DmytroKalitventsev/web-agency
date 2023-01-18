@@ -46,9 +46,9 @@
 		}
 	}
 	.menu-open {
-		& .logo {
+		& .header .logo {
 			position: fixed;
-			top: 9px;
+			top: 12px;
 			left: 15px;
 		}
 		& .menu,

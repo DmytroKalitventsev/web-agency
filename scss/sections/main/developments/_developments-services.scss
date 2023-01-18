@@ -25,6 +25,10 @@
 	left: -116px;
 	z-index: 1;
 	overflow: hidden;
+	&__title {
+		max-height: 60px;
+		overflow: hidden;
+	}
 	&__icon {
 		color: #ffffff50;
 		&-wrap {
@@ -182,6 +186,8 @@
 		flex: 0 1 50%;
 		border-bottom: 1px solid #fff;
 		line-height: 1;
+		max-height: 110px;
+		overflow: hidden;
 	}
 	& .price-button {
 		&__button-price {

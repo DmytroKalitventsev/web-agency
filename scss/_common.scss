@@ -47,7 +47,7 @@ body {
 	text-align: left;
 	&_h1 {
 		text-align: center;
-		line-height: 1.5;
+		line-height: 1.25;
 	}
 	&_h2 {
 		font-size: 1.5rem;
@@ -88,20 +88,32 @@ body {
 }
 
 .logo {
+	@include flex;
 	position: relative;
 	z-index: 11;
-	width: 60px;
+	column-gap: 10px;
+	&__img {
+		&-wrap {
+			width: 55px;
+		}
+	}
 	&__text {
+		font-size: 1rem;
 		font-weight: bold;
 		white-space: nowrap;
 		line-height: 1.1;
 	}
 	@media (max-width: $bp2) {
-		width: 50px;
+		column-gap: 5px;
+		&__img-wrap {
+			width: 50px;
+		}
 	}
 
 	@media (max-width: $bp4) {
-		width: 45px;
+		&__img-wrap {
+			width: 45px;
+		}
 	}
 }
 
@@ -132,7 +144,7 @@ body {
 	}
 
 	@media (max-width: $bp6) {
-		top: -25%;
+		top: -21%;
 		left: -4%;
 	}
 }
@@ -141,6 +153,7 @@ body {
 	@include flex(space-between);
 	width: 100%;
 	white-space: nowrap;
+	column-gap: 30px;
 	&__button-price {
 		display: inline-block;
 		text-align: center;
@@ -149,6 +162,7 @@ body {
 		color: #fff;
 		border: 2px solid #fff;
 		padding: 8px 12px;
+		overflow: hidden;
 		transition: border-color 0.2s ease 0s, transform 0.4s ease 0s;
 		&:hover {
 			transform: scale(1.05);
@@ -172,7 +186,7 @@ body {
 
 	@media (max-width: $bp2) {
 		&__button-price {
-			font-size: .85rem;
+			font-size: 0.85rem;
 		}
 	}
 
@@ -184,11 +198,13 @@ body {
 }
 
 .content {
-	margin-left: 70px;
+	margin-left: 65px;
 	&__title {
 		margin-bottom: 15px;
 		position: relative;
 		z-index: 2;
+		max-height: 45px;
+		overflow: hidden;
 		&-wrap {
 			position: relative;
 			z-index: 2;
@@ -197,6 +213,8 @@ body {
 	&__descr {
 		line-height: 2;
 		max-width: 577px;
+		max-height: 480px;
+		overflow: hidden;
 	}
 
 	@media (max-width: $bp1) {
@@ -207,11 +225,13 @@ body {
 		margin-left: 0;
 		&__title {
 			margin-bottom: 6px;
+			max-height: 35px;
 		}
 		&__descr {
 			line-height: 1.5;
 			font-size: 0.9rem;
 			max-width: initial;
+			max-height: 195px;
 		}
 	}
 }

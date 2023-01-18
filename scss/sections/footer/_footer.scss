@@ -5,13 +5,9 @@
 		@include flex(space-between);
 		min-height: 100px;
 	}
-	&__logo {
-		@include flex;
-		column-gap: 10px;
-		& .logo__img {
-			background-color: #fff;
-			border-radius: 50%;
-		}
+	& .logo__img-wrap {
+		background-color: #fff;
+		border-radius: 50%;
 	}
 	&__start {
 		@include flex;

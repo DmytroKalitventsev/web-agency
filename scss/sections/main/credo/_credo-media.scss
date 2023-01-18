@@ -6,9 +6,9 @@
 			margin-bottom: 20px;
 		}
 		&__descr {
-			padding-left: 40px;
-			padding-right: 40px;
 			line-height: 1.5;
+			padding: 0;
+			max-height: 240px;
 		}
 	}
 }
@@ -27,9 +27,5 @@
 	.credo {
 		padding-top: $bp5PaddingTop;
 		padding-bottom: $bp5PaddingBottom;
-		&__descr {
-			padding-left: 0;
-			padding-right: 0;
-		}
 	}
 }

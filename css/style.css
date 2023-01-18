@@ -132,7 +132,7 @@ body {
 }
 .title_h1 {
   text-align: center;
-  line-height: 1.5;
+  line-height: 1.25;
 }
 .title_h2 {
   font-size: 1.5rem;
@@ -173,22 +173,46 @@ body {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: relative;
   z-index: 11;
-  width: 60px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.logo__img-wrap {
+  width: 55px;
 }
 .logo__text {
+  font-size: 1rem;
   font-weight: bold;
   white-space: nowrap;
   line-height: 1.1;
 }
 @media (max-width: 950px) {
   .logo {
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+  }
+  .logo__img-wrap {
     width: 50px;
   }
 }
 @media (max-width: 767.98px) {
-  .logo {
+  .logo__img-wrap {
     width: 45px;
   }
 }
@@ -223,7 +247,7 @@ body {
 }
 @media (max-width: 430px) {
   .background-text {
-    top: -25%;
+    top: -21%;
     left: -4%;
   }
 }
@@ -244,6 +268,9 @@ body {
           flex-direction: row;
   width: 100%;
   white-space: nowrap;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
 }
 .price-button__button-price {
   display: inline-block;
@@ -253,6 +280,7 @@ body {
   color: #fff;
   border: 2px solid #fff;
   padding: 8px 12px;
+  overflow: hidden;
   -webkit-transition: border-color 0.2s ease 0s, -webkit-transform 0.4s ease 0s;
   transition: border-color 0.2s ease 0s, -webkit-transform 0.4s ease 0s;
   transition: border-color 0.2s ease 0s, transform 0.4s ease 0s;
@@ -305,12 +333,14 @@ body {
 }
 
 .content {
-  margin-left: 70px;
+  margin-left: 65px;
 }
 .content__title {
   margin-bottom: 15px;
   position: relative;
   z-index: 2;
+  max-height: 45px;
+  overflow: hidden;
 }
 .content__title-wrap {
   position: relative;
@@ -319,6 +349,8 @@ body {
 .content__descr {
   line-height: 2;
   max-width: 577px;
+  max-height: 480px;
+  overflow: hidden;
 }
 @media (max-width: 1035px) {
   .content {
@@ -331,11 +363,13 @@ body {
   }
   .content__title {
     margin-bottom: 6px;
+    max-height: 35px;
   }
   .content__descr {
     line-height: 1.5;
     font-size: 0.9rem;
     max-width: initial;
+    max-height: 195px;
   }
 }
 
@@ -580,15 +614,15 @@ body {
 .hero__title {
   max-width: 1100px;
   margin-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-height: 120px;
+  overflow: hidden;
 }
 .hero__descr {
   text-align: center;
   line-height: 1.5;
-  max-width: 835px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1000px;
+  max-height: 116px;
+  overflow: hidden;
 }
 
 .achivments {
@@ -675,14 +709,19 @@ body {
   height: 35px;
 }
 .achivment__value {
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
   letter-spacing: 2px;
+  width: 100%;
+  overflow: hidden;
 }
 .achivment__descr {
   font-size: 0.75rem;
   text-align: center;
+  max-height: 36px;
+  overflow: hidden;
 }
 @media (max-width: 950px) {
   .achivment {
@@ -790,12 +829,6 @@ body {
   .hero__content {
     margin-bottom: 25px;
   }
-  .hero__title {
-    padding: 0;
-  }
-  .hero__descr {
-    padding: 0;
-  }
 }
 .header {
   background: #fff;
@@ -820,9 +853,9 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 100px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
 
 .menu__list {
@@ -853,6 +886,8 @@ body {
   padding: 15px 0;
   -webkit-transition: color 0.2s ease 0s;
   transition: color 0.2s ease 0s;
+  max-width: 265px;
+  overflow: hidden;
 }
 .menu__link:hover {
   color: #f6ae48;
@@ -915,9 +950,9 @@ body {
   .menu__link {
     padding: 20px 0;
   }
-  .menu-open .logo {
+  .menu-open .header .logo {
     position: fixed;
-    top: 9px;
+    top: 12px;
     left: 15px;
   }
   .menu-open .menu, .menu-open .menu::before {
@@ -1025,6 +1060,12 @@ body {
 }
 .studio__title {
   margin-right: 100px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 205px;
+  max-height: 120px;
+  overflow: hidden;
 }
 .studio__descr {
   position: relative;
@@ -1033,6 +1074,8 @@ body {
   font-size: 0.85rem;
   line-height: 1.4;
   max-width: 760px;
+  max-height: 235px;
+  overflow: hidden;
 }
 .studio__descr-wrap {
   position: relative;
@@ -1173,6 +1216,9 @@ body {
   margin-bottom: 10px;
   height: 50px;
   width: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 .studio-service__icon-wrap_size {
   margin-bottom: 15px;
@@ -1183,11 +1229,30 @@ body {
   font-size: 0.85rem;
   margin-bottom: 10px;
   font-weight: bold;
+  max-height: 21px;
+  overflow: hidden;
+}
+.studio-service__title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .studio-service__descr {
   margin-bottom: 15px;
   font-size: 0.65rem;
   line-height: 1.7;
+  max-height: 345px;
+  overflow: hidden;
 }
 @media (max-width: 950px) {
   .studio-service {
@@ -1255,10 +1320,20 @@ body {
     margin-bottom: 0;
     font-size: 1rem;
   }
+  .studio-service__title-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .studio-service__descr {
     margin-bottom: 5px;
     line-height: 1.5;
     font-size: 0.8rem;
+    max-height: 154px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1289,12 +1364,15 @@ body {
   .studio__title {
     margin-bottom: 3px;
     margin-right: 0;
+    max-width: initial;
+    max-height: 45px;
   }
   .studio__descr {
     font-size: 0.9rem;
     margin-right: 0;
     max-width: initial;
     line-height: 1.5;
+    max-height: 240px;
   }
   .studio .background-text {
     left: -2%;
@@ -1349,12 +1427,16 @@ body {
 .credo__title {
   text-align: center;
   margin-bottom: 30px;
+  max-width: 1100px;
+  max-height: 120px;
+  overflow: hidden;
 }
 .credo__descr {
   text-align: center;
   line-height: 1.5;
-  padding-left: 90px;
-  padding-right: 90px;
+  max-width: 1000px;
+  max-height: 247px;
+  overflow: hidden;
 }
 
 @media (max-width: 950px) {
@@ -1366,9 +1448,9 @@ body {
     margin-bottom: 20px;
   }
   .credo__descr {
-    padding-left: 40px;
-    padding-right: 40px;
     line-height: 1.5;
+    padding: 0;
+    max-height: 240px;
   }
 }
 @media (max-width: 767.98px) {
@@ -1384,10 +1466,6 @@ body {
   .credo {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  .credo__descr {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .developments {
@@ -1483,6 +1561,10 @@ body {
   top: -235px;
   left: -116px;
   z-index: 1;
+  overflow: hidden;
+}
+.developments-title__title {
+  max-height: 60px;
   overflow: hidden;
 }
 .developments-title__icon {
@@ -1665,6 +1747,8 @@ body {
           flex: 0 1 50%;
   border-bottom: 1px solid #fff;
   line-height: 1;
+  max-height: 110px;
+  overflow: hidden;
 }
 .developments-price .price-button__button-price {
   font-size: 1rem;
@@ -1897,6 +1981,9 @@ body {
   position: relative;
   z-index: 2;
   font-size: 1.5rem;
+  text-align: center;
+  max-width: 923px;
+  overflow: hidden;
 }
 .projects__works {
   display: -webkit-box;
@@ -2288,6 +2375,9 @@ body {
 }
 .advantages__title {
   margin-bottom: 35px;
+  text-align: center;
+  max-height: 68px;
+  overflow: hidden;
 }
 
 .advantages-items {
@@ -2337,6 +2427,10 @@ body {
      -moz-column-gap: 10px;
           column-gap: 10px;
 }
+.advantages-item__title {
+  max-height: 72px;
+  overflow: hidden;
+}
 .advantages-item__title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2371,6 +2465,8 @@ body {
 .advantages-item__descr {
   font-size: 0.75rem;
   line-height: 1.6;
+  max-height: 490px;
+  overflow: hidden;
 }
 
 @media (max-width: 950px) {
@@ -2403,6 +2499,9 @@ body {
   .advantages-item:last-child {
     margin-bottom: 0;
   }
+  .advantages-item__title {
+    max-height: 55px;
+  }
   .advantages-item__title-wrap {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -2421,6 +2520,7 @@ body {
   .advantages-item__descr {
     line-height: 1.5;
     font-size: 0.9rem;
+    max-height: 238px;
   }
 }
 @media (max-width: 767.98px) {
@@ -2560,15 +2660,20 @@ body {
           column-gap: 10%;
 }
 .contacts__content {
-  margin-left: 70px;
+  margin-left: 65px;
 }
 .contacts__title {
   margin-bottom: 20px;
+  max-height: 72px;
+  max-width: 355px;
+  overflow: hidden;
 }
 .contacts__descr {
   max-width: 355px;
   font-size: 0.75rem;
   line-height: 1.5;
+  max-height: 216px;
+  overflow: hidden;
 }
 
 .contacts-form {
@@ -2654,8 +2759,10 @@ body {
   width: 100%;
 }
 .contacts-form__info {
-  font-size: 0.55rem;
+  font-size: 0.58rem;
   line-height: 1.7;
+  max-height: 48px;
+  overflow: hidden;
 }
 .contacts-form .button {
   padding: 15px 28px;
@@ -2686,11 +2793,13 @@ body {
   }
   .contacts__title {
     margin-bottom: 10px;
+    max-height: 55px;
   }
   .contacts__descr {
     max-width: initial;
     font-size: 0.9rem;
     margin-bottom: 40px;
+    max-height: 130px;
   }
   .contacts-form {
     -webkit-box-flex: 0;
@@ -2778,25 +2887,7 @@ body {
           flex-direction: row;
   min-height: 100px;
 }
-.footer__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
-}
-.footer__logo .logo__img {
+.footer .logo__img-wrap {
   background-color: #fff;
   border-radius: 50%;
 }
@@ -2843,11 +2934,6 @@ body {
 @media (max-width: 950px) {
   .footer__container {
     min-height: 80px;
-  }
-  .footer__logo {
-    -webkit-column-gap: 5px;
-       -moz-column-gap: 5px;
-            column-gap: 5px;
   }
   .footer__start {
     width: 55px;

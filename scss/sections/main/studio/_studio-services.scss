@@ -68,6 +68,7 @@
 			margin-bottom: 10px;
 			height: 50px;
 			width: 30px;
+			flex: 0 0 auto;
 			&_size {
 				margin-bottom: 15px;
 				height: 45px;
@@ -79,11 +80,18 @@
 		font-size: 0.85rem;
 		margin-bottom: 10px;
 		font-weight: bold;
+		max-height: 21px;
+		overflow: hidden;
+		&-wrap {
+			@include flex(flex-start, flex-start, column);
+		}
 	}
 	&__descr {
 		margin-bottom: 15px;
 		font-size: 0.65rem;
 		line-height: 1.7;
+		max-height: 345px;
+		overflow: hidden;
 	}
 
 	@media (max-width: $bp2) {
@@ -142,11 +150,16 @@
 		&__title {
 			margin-bottom: 0;
 			font-size: 1rem;
+			&-wrap {
+				flex-direction: row;
+				align-items: center;
+			}
 		}
 		&__descr {
 			margin-bottom: 5px;
 			line-height: 1.5;
-			font-size: .8rem;
+			font-size: 0.8rem;
+			max-height: 154px;
 		}
 	}
 

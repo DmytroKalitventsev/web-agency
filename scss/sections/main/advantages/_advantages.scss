@@ -12,6 +12,9 @@
 	}
 	&__title {
 		margin-bottom: 35px;
+		text-align: center;
+		max-height: 68px;
+		overflow: hidden;
 	}
 }
 .advantages-items {
@@ -31,6 +34,8 @@
 		}
 	}
 	&__title {
+		max-height: 72px;
+		overflow: hidden;
 		&-wrap {
 			@include flex;
 			flex: 1 0 66px;
@@ -48,6 +53,8 @@
 	&__descr {
 		font-size: 0.75rem;
 		line-height: 1.6;
+		max-height: 490px;
+		overflow: hidden;
 	}
 }
 

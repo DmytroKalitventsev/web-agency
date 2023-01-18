@@ -17,11 +17,13 @@
 		}
 		&__title {
 			margin-bottom: 10px;
+			max-height: 55px;
 		}
 		&__descr {
 			max-width: initial;
 			font-size: 0.9rem;
 			margin-bottom: 40px;
+			max-height: 130px;
 		}
 	}
 	.contacts-form {

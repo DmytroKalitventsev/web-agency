@@ -10,12 +10,15 @@
 		&__title {
 			margin-bottom: 3px;
 			margin-right: 0;
+			max-width: initial;
+			max-height: 45px;
 		}
 		&__descr {
-			font-size: .9rem;
+			font-size: 0.9rem;
 			margin-right: 0;
 			max-width: initial;
 			line-height: 1.5;
+			max-height: 240px;
 		}
 		& .background-text {
 			left: -2%;

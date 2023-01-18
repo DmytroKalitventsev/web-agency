@@ -8,7 +8,7 @@
 	&__container {
 		@include flex(space-between);
 		min-height: 100px;
-		column-gap: 20px;
+		column-gap: 40px;
 	}
 }
 .menu {
@@ -24,6 +24,8 @@
 	&__link {
 		padding: 15px 0;
 		transition: color 0.2s ease 0s;
+		max-width: 265px;
+		overflow: hidden;
 		&:hover {
 			color: $addColorElements;
 		}

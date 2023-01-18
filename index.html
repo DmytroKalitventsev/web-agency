@@ -58,7 +58,9 @@
 		<header class="header">
 			<div class="header__container">
 				<a class="logo" href="#">
-					<img class="logo__img" src="./img/logo.svg" alt="logo">
+					<div class="logo__img-wrap">
+						<img class="logo__img" src="./img/logo.svg" alt="logo">
+					</div>
 				</a>
 				<nav class="menu">
 					<ul class="menu__list">
@@ -102,12 +104,14 @@
 					</div>
 					<div class="studio-services">
 						<div class="studio-service wow animate animate_fadeInLeftBig">
-							<div class="studio-service__icon-wrap">
-								<svg class="studio-service__icon">
-									<use xlink:href="./img/svg/studio.svg#rocket"></use>
-								</svg>
+							<div class="studio-service__title-wrap">
+								<div class="studio-service__icon-wrap">
+									<svg class="studio-service__icon">
+										<use xlink:href="./img/svg/studio.svg#rocket"></use>
+									</svg>
+								</div>
+								<h2 class="studio-service__title">Старт</h2>
 							</div>
-							<h2 class="studio-service__title">Старт</h2>
 							<p class="studio-service__descr">
 								Вы хотите получать больше клиентов
 								и прибыли из интернета? С нуля разработаем
@@ -127,12 +131,14 @@
 							</div>
 						</div>
 						<div class="studio-service wow animate animate_fadeInUpBig">
-							<div class="studio-service__icon-wrap">
-								<svg class="studio-service__icon">
-									<use xlink:href="./img/svg/studio.svg#mobile"></use>
-								</svg>
+							<div class="studio-service__title-wrap">
+								<div class="studio-service__icon-wrap">
+									<svg class="studio-service__icon">
+										<use xlink:href="./img/svg/studio.svg#mobile"></use>
+									</svg>
+								</div>
+								<h2 class="studio-service__title">Продвижение</h2>
 							</div>
-							<h2 class="studio-service__title">Продвижение</h2>
 							<p class="studio-service__descr">
 								Одним из важнейших этапов продвижения
 								сайта является поисковая оптимизация (SEO),
@@ -151,12 +157,14 @@
 							</div>
 						</div>
 						<div class="studio-service wow animate animate_fadeInRightBig">
-							<div class="studio-service__icon-wrap studio-service__icon-wrap_size">
-								<svg class="studio-service__icon">
-									<use xlink:href="./img/svg/studio.svg#heart"></use>
-								</svg>
+							<div class="studio-service__title-wrap">
+								<div class="studio-service__icon-wrap studio-service__icon-wrap_size">
+									<svg class="studio-service__icon">
+										<use xlink:href="./img/svg/studio.svg#heart"></use>
+									</svg>
+								</div>
+								<h2 class="studio-service__title">Поддержка</h2>
 							</div>
-							<h2 class="studio-service__title">Поддержка</h2>
 							<p class="studio-service__descr">
 								У Вас уже работающий бизнес и Вы
 								регулярно нуждаетесь в услугах веб-студии
@@ -495,11 +503,11 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a class="footer__logo" href="#">
-					<div class="logo">
+				<a class="logo" href="#">
+					<div class="logo__img-wrap">
 						<img class="logo__img" src="./img/logo.svg" alt="logo">
 					</div>
-					<span class="logo__text" href="#">WEB Agency</span>
+					<span class="logo__text">WEB Agency</span>
 				</a>
 				<a class="footer__start" href="#">
 					<svg class="footer__icon">
