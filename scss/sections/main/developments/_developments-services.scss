@@ -201,7 +201,7 @@
 	@media (max-width: $bp0) {
 		padding: 60px 25px 25px 20px;
 		width: 310px;
-		height: 280px;
+		height: 260px;
 		&__title {
 			font-size: 1.5rem;
 			flex: 0 1 43%;
@@ -214,6 +214,7 @@
 	}
 
 	@media (max-width: $bp1) {
+		padding-top: 50px;
 		width: 280px;
 		height: 250px;
 		&__title {
@@ -234,14 +235,16 @@
 	@media (max-width: $bp2) {
 		padding: 40px 20px 20px 20px;
 		width: 250px;
-		height: 220px;
+		height: 200px;
 		&__title {
 			flex: 0 1 46%;
 		}
 	}
 
 	@media (max-width: $bp3) {
+		padding-top: 30px;
 		width: 220px;
+		height: 190px;
 		& .price-button__button-price {
 			font-size: 0.8rem;
 			padding: 10px 7px;
@@ -256,6 +259,7 @@
 		}
 		&__title {
 			font-size: 1.5rem;
+			flex: 0 1 43%;
 		}
 		& .price-button__button-price {
 			font-size: 1rem;
@@ -264,18 +268,21 @@
 	}
 
 	@media (max-width: $bp5) {
-		padding: 30px 15px 15px 15px;
+		padding: 25px 15px 15px 15px;
 		flex: 0 1 92%;
-		height: 160px;
+		height: 150px;
+		&__title {
+			flex: 0 1 35%;
+		}
 	}
 
 	@media (max-width: $bp6) {
-		height: 150px;
+		height: 140px;
 		&__title {
 			font-size: 1.4rem;
 		}
 		& .price-button__button-price {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 			padding: 10px 12px;
 		}
 	}
