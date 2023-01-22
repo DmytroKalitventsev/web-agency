@@ -13,7 +13,7 @@
 	}
 	&__heared {
 		@include flex;
-		background-color: #303263;
+		background-color: $mainColorElements;
 		min-height: 120px;
 		position: relative;
 		width: 100%;
@@ -33,7 +33,7 @@
 	}
 	&__work {
 		transition: transform 0.4s ease 0s;
-		outline: 1px solid #303263;
+		outline: 1px solid $mainColorElements;
 		&:hover {
 			transform: scale(1.1);
 		}
@@ -52,7 +52,7 @@
 	}
 	&__footer {
 		@include flex;
-		background-color: #303263;
+		background-color: $mainColorElements;
 		min-height: 120px;
 		width: 100%;
 	}

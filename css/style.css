@@ -97,6 +97,23 @@ button {
 body {
   background-color: #fff;
 }
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+body::-webkit-scrollbar-track {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+}
+body::-webkit-scrollbar-thumb {
+  background: #f6ae48;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  height: 6rem;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #ff9500;
+}
 
 .wrapper {
   min-height: 100%;
