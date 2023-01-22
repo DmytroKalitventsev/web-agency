@@ -19,6 +19,22 @@
 
 body {
 	background-color: #fff;
+	&::-webkit-scrollbar {
+		width: .8rem;
+	}
+	&::-webkit-scrollbar-track {
+		background: #fff;
+		box-shadow: 0 0 2px rgb(0, 0, 0,.2) inset;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: $addColorElements;
+		border: 3px solid #fff;
+		border-radius: 10px;
+		height: 150px;
+		&:hover {
+			background: #ff9500;
+		}
+	}
 }
 
 .wrapper {
