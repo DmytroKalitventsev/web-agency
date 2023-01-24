@@ -4,3 +4,9 @@
 	align-items: $ai;
 	flex-direction: $fd;
 }
+
+@mixin grid($jc: center, $ai: center) {
+	display: grid;
+	justify-content: $jc;
+	align-items: $ai;
+}

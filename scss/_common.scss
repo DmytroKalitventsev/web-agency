@@ -166,7 +166,8 @@ body {
 }
 
 .price-button {
-	@include flex(space-between);
+	@include grid(space-between);
+	grid-auto-flow: column;
 	width: 100%;
 	white-space: nowrap;
 	column-gap: 30px;
@@ -185,7 +186,7 @@ body {
 		}
 	}
 	&__view {
-		@include flex;
+		@include grid;
 		height: 40px;
 		width: 40px;
 		border-radius: 10px;

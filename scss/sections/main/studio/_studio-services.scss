@@ -1,19 +1,19 @@
 .studio-services {
-	@include flex(center, flex-start);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	column-gap: 15px;
 	width: 100%;
 
 	@media (max-width: $bp2) {
-		align-items: center;
-		flex-direction: column;
-		column-gap: initial;
+		grid-template: repeat(3, auto) / 1fr;
 	}
 }
 
 .studio-service {
-	@include flex(flex-start, flex-start, column);
+	display: grid;
+	grid-auto-flow: row;
+	grid-template: auto auto 1fr minmax(30px, auto) / 1fr;
 	position: relative;
-	flex: 0 1 33.333%;
 	padding: 15px 25px;
 	transition: background-color $transitionHoverStudio;
 	cursor: pointer;
@@ -68,7 +68,6 @@
 			margin-bottom: 10px;
 			height: 50px;
 			width: 30px;
-			flex: 0 0 auto;
 			&_size {
 				margin-bottom: 15px;
 				height: 45px;
@@ -82,9 +81,6 @@
 		font-weight: bold;
 		max-height: 21px;
 		overflow: hidden;
-		&-wrap {
-			@include flex(flex-start, flex-start, column);
-		}
 	}
 	&__descr {
 		margin-bottom: 15px;
@@ -95,8 +91,8 @@
 	}
 
 	@media (max-width: $bp2) {
-		@include flex(flex-start);
-		flex-wrap: wrap;
+		grid-template: auto 1fr minmax(30px, auto) / auto 1fr;
+		grid-template-areas: "icon title" "descr descr" "button button";
 		padding: 10px 0px;
 		&:hover {
 			&:nth-child(-n + 3) {
@@ -135,7 +131,11 @@
 				background-color: $addColorElements;
 			}
 		}
+		& .price-button {
+			grid-area: button;
+		}
 		&__icon {
+			grid-area: icon;
 			&-wrap {
 				margin-right: 10px;
 				margin-bottom: 5px;
@@ -148,14 +148,13 @@
 			}
 		}
 		&__title {
+			grid-area: title;
+			align-self: center;
 			margin-bottom: 0;
 			font-size: 1rem;
-			&-wrap {
-				flex-direction: row;
-				align-items: center;
-			}
 		}
 		&__descr {
+			grid-area: descr;
 			margin-bottom: 5px;
 			line-height: 1.5;
 			font-size: 0.8rem;
@@ -164,13 +163,11 @@
 	}
 
 	@media (max-width: $bp4) {
-		&__icon {
-			&-wrap {
-				height: 44px;
-				width: 26px;
-				&_size {
-					width: 43px;
-				}
+		&__icon-wrap {
+			height: 44px;
+			width: 26px;
+			&_size {
+				width: 43px;
 			}
 		}
 	}
