@@ -393,6 +393,7 @@ body::-webkit-scrollbar-thumb:hover {
   -webkit-transition: background-color 0.2s ease 0s;
   transition: background-color 0.2s ease 0s;
   background-color: #f6ae48;
+  text-transform: uppercase;
 }
 .button:hover {
   background-color: #ff9500;

@@ -1,284 +1,289 @@
 :root {
-	font-size: 24px;
-	font-family: Arial, Helvetica, sans-serif;
-	letter-spacing: 1px;
-	color: #000;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: #000;
 
-	@media (max-width: $bp2) {
-		letter-spacing: 0px;
-		font-size: 20px;
-		.animate {
-			animation: none !important;
-		}
-	}
+  @media (max-width: $bp2) {
+    letter-spacing: 0px;
+    font-size: 20px;
+    .animate {
+      animation: none !important;
+    }
+  }
 
-	@media (max-width: $bp4) {
-		font-size: 16px;
-	}
+  @media (max-width: $bp4) {
+    font-size: 16px;
+  }
 }
 
 body {
-	background-color: #fff;
-	&::-webkit-scrollbar {
-		width: 0.8rem;
-	}
-	&::-webkit-scrollbar-track {
-		background: #fff;
-		box-shadow: 0 0 2px rgb(0, 0, 0, 0.2) inset;
-	}
-	&::-webkit-scrollbar-thumb {
-		background: $addColorElements;
-		border: 3px solid #fff;
-		border-radius: 10px;
-		height: 6rem;
-		&:hover {
-			background: #ff9500;
-		}
-	}
+  background-color: #fff;
+  &::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.2) inset;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $addColorElements;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    &:hover {
+      background: #ff9500;
+    }
+  }
 }
 
 .wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
 }
 
 [class*="__container"] {
-	max-width: 1260px;
-	margin: 0 auto;
-	padding: 0 15px;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .pages {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .title {
-	font-weight: bold;
-	font-size: 2rem;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	line-height: 1.25;
-	text-align: left;
-	&_h1 {
-		text-align: center;
-		line-height: 1.25;
-	}
-	&_h2 {
-		font-size: 1.5rem;
-	}
-	&_h3 {
-		font-size: 1.2rem;
-	}
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  text-align: left;
+  &_h1 {
+    text-align: center;
+    line-height: 1.25;
+  }
+  &_h2 {
+    font-size: 1.5rem;
+  }
+  &_h3 {
+    font-size: 1.2rem;
+  }
 
-	@media (max-width: $bp2) {
-		font-size: 1.8rem;
-		letter-spacing: 1px;
-		&_h1 {
-			line-height: 1.25;
-		}
-		&_h2 {
-			font-size: 1.4rem;
-		}
-		&_h3 {
-			font-size: 1.2rem;
-		}
-	}
+  @media (max-width: $bp2) {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    &_h1 {
+      line-height: 1.25;
+    }
+    &_h2 {
+      font-size: 1.4rem;
+    }
+    &_h3 {
+      font-size: 1.2rem;
+    }
+  }
 
-	@media (max-width: $bp4) {
-		font-size: 1.7rem;
-		&_h2 {
-			font-size: 1.3rem;
-		}
-		&_h3 {
-			font-size: 1.2rem;
-		}
-	}
+  @media (max-width: $bp4) {
+    font-size: 1.7rem;
+    &_h2 {
+      font-size: 1.3rem;
+    }
+    &_h3 {
+      font-size: 1.2rem;
+    }
+  }
 
-	@media (max-width: $bp5) {
-		&_h1 {
-			font-size: 1.6rem;
-		}
-	}
+  @media (max-width: $bp5) {
+    &_h1 {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 .logo {
-	@include flex;
-	position: relative;
-	z-index: 11;
-	column-gap: 10px;
-	&__img {
-		&-wrap {
-			width: 55px;
-		}
-	}
-	&__text {
-		font-size: 1rem;
-		font-weight: bold;
-		white-space: nowrap;
-		line-height: 1.1;
-	}
-	@media (max-width: $bp2) {
-		column-gap: 5px;
-		&__img-wrap {
-			width: 50px;
-		}
-	}
+  @include flex;
+  position: relative;
+  z-index: 11;
+  column-gap: 10px;
+  &__img {
+    &-wrap {
+      width: 55px;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: bold;
+    white-space: nowrap;
+    line-height: 1.1;
+  }
+  @media (max-width: $bp2) {
+    column-gap: 5px;
+    &__img-wrap {
+      width: 50px;
+    }
+  }
 
-	@media (max-width: $bp4) {
-		&__img-wrap {
-			width: 45px;
-		}
-	}
+  @media (max-width: $bp4) {
+    &__img-wrap {
+      width: 45px;
+    }
+  }
 }
 
 .background-text {
-	position: absolute;
-	top: -35%;
-	left: -9%;
-	z-index: 1;
-	font-family: tahoma;
-	font-weight: bold;
-	letter-spacing: 4px;
-	font-size: 3rem;
-	white-space: nowrap;
-	text-transform: uppercase;
-	line-height: 1;
-	color: #0000001b;
+  position: absolute;
+  top: -35%;
+  left: -9%;
+  z-index: 1;
+  font-family: tahoma;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 3rem;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 1;
+  color: #0000001b;
 
-	@media (max-width: $bp2) {
-		top: -33%;
-		left: -2%;
-		font-size: 2.7rem;
-		letter-spacing: 3px;
-	}
+  @media (max-width: $bp2) {
+    top: -33%;
+    left: -2%;
+    font-size: 2.7rem;
+    letter-spacing: 3px;
+  }
 
-	@media (max-width: $bp4) {
-		font-size: 2.3rem;
-		top: -24%;
-	}
+  @media (max-width: $bp4) {
+    font-size: 2.3rem;
+    top: -24%;
+  }
 
-	@media (max-width: $bp6) {
-		top: -21%;
-		left: -4%;
-	}
+  @media (max-width: $bp6) {
+    top: -21%;
+    left: -4%;
+  }
 }
 
 .price-button {
-	@include grid(space-between);
-	grid-auto-flow: column;
-	width: 100%;
-	white-space: nowrap;
-	column-gap: 30px;
-	&__button-price {
-		display: inline-block;
-		text-align: center;
-		font-size: 0.75rem;
-		line-height: 1;
-		color: #fff;
-		border: 2px solid #fff;
-		padding: 8px 12px;
-		overflow: hidden;
-		transition: border-color 0.2s ease 0s, transform 0.4s ease 0s;
-		&:hover {
-			transform: scale(1.05);
-		}
-	}
-	&__view {
-		@include grid;
-		height: 40px;
-		width: 40px;
-		border-radius: 10px;
-	}
-	&__icon {
-		transition: color 0.2s ease 0s, transform 0.4s ease 0s;
-		color: #fff;
-		width: 22px;
-		height: 22px;
-		&:hover {
-			transform: scale(1.2);
-		}
-	}
+  @include grid(space-between);
+  grid-auto-flow: column;
+  width: 100%;
+  white-space: nowrap;
+  column-gap: 30px;
+  &__button-price {
+    display: inline-block;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 12px;
+    overflow: hidden;
+    transition:
+      border-color 0.2s ease 0s,
+      transform 0.4s ease 0s;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__view {
+    @include grid;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+  }
+  &__icon {
+    transition:
+      color 0.2s ease 0s,
+      transform 0.4s ease 0s;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 
-	@media (max-width: $bp2) {
-		&__button-price {
-			font-size: 0.85rem;
-		}
-	}
+  @media (max-width: $bp2) {
+    &__button-price {
+      font-size: 0.85rem;
+    }
+  }
 
-	@media (max-width: $bp6) {
-		&__button-price {
-			min-width: 100px;
-		}
-	}
+  @media (max-width: $bp6) {
+    &__button-price {
+      min-width: 100px;
+    }
+  }
 }
 
 .content {
-	margin-left: 65px;
-	&__title {
-		margin-bottom: 15px;
-		position: relative;
-		z-index: 2;
-		max-height: 45px;
-		overflow: hidden;
-		&-wrap {
-			position: relative;
-			z-index: 2;
-		}
-	}
-	&__descr {
-		line-height: 2;
-		max-width: 577px;
-		max-height: 480px;
-		overflow: hidden;
-	}
+  margin-left: 65px;
+  &__title {
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    max-height: 45px;
+    overflow: hidden;
+    &-wrap {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__descr {
+    line-height: 2;
+    max-width: 577px;
+    max-height: 480px;
+    overflow: hidden;
+  }
 
-	@media (max-width: $bp1) {
-		margin-left: 40px;
-	}
+  @media (max-width: $bp1) {
+    margin-left: 40px;
+  }
 
-	@media (max-width: $bp2) {
-		margin-left: 0;
-		&__title {
-			margin-bottom: 6px;
-			max-height: 35px;
-		}
-		&__descr {
-			line-height: 1.5;
-			font-size: 0.9rem;
-			max-width: initial;
-			max-height: 195px;
-		}
-	}
+  @media (max-width: $bp2) {
+    margin-left: 0;
+    &__title {
+      margin-bottom: 6px;
+      max-height: 35px;
+    }
+    &__descr {
+      line-height: 1.5;
+      font-size: 0.9rem;
+      max-width: initial;
+      max-height: 195px;
+    }
+  }
 }
 
 .button {
-	display: inline-block;
-	text-align: center;
-	line-height: 1;
-	font-weight: bold;
-	color: #fff;
-	padding: 21px 34px;
-	white-space: nowrap;
-	font-size: 1rem;
-	letter-spacing: 1px;
-	border-radius: 10px;
-	transition: background-color 0.2s ease 0s;
-	background-color: $addColorElements;
-	&:hover {
-		background-color: #ff9500;
-	}
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  font-weight: bold;
+  color: #fff;
+  padding: 21px 34px;
+  white-space: nowrap;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease 0s;
+  background-color: $addColorElements;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #ff9500;
+  }
 
-	@media (max-width: $bp2) {
-		padding: 17px 27px;
-	}
+  @media (max-width: $bp2) {
+    padding: 17px 27px;
+  }
 
-	@media (max-width: $bp4) {
-		padding: 17px 24px;
-	}
+  @media (max-width: $bp4) {
+    padding: 17px 24px;
+  }
 
-	@media (max-width: $bp6) {
-		padding: 17px 16px;
-	}
+  @media (max-width: $bp6) {
+    padding: 17px 16px;
+  }
 }
